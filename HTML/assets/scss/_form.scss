@@ -1,0 +1,230 @@
+.form-control,
+.form-select {
+  border: 0 none;
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.form-floating {
+  & > label {
+    opacity: 1 !important;
+    padding-left: 20px;
+    color: #999999;
+  }
+  & > .form-control,
+  & > .form-select {
+    height: 3.75rem;
+    padding-left: 20px;
+
+    &.is-valid:not(:placeholder-shown) {
+      & + label {
+        &::after {
+          content: "";
+          height: 80%;
+          width: 6px;
+          border-radius: 4px;
+          background-color: $green;
+          position: absolute;
+          left: 4px;
+          top: 10%;
+        }
+      }
+    }
+    &.is-invalid:not(:placeholder-shown) {
+      & + label {
+        &::after {
+          content: "";
+          height: 80%;
+          width: 6px;
+          border-radius: 4px;
+          background-color: $red;
+          position: absolute;
+          left: 4px;
+          top: 10%;
+        }
+      }
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      & ~ label,
+      & + label {
+        padding-top: 0.5rem;
+        padding-bottom: 3.75rem;
+        transform: scale(0.85) translateY(0rem) translateX(0.15rem);
+      }
+    }
+  }
+}
+.tooltip-btn {
+  background: none;
+  border: 0;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -18px;
+  right: 0px;
+  display: none;
+}
+
+/* range picker slider */
+.noUi-target {
+  background: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: $text-color-theme;
+  border: solid 1px $page-bg-color;
+
+  &.noUi-horizontal {
+    height: 10px;
+  }
+
+  .noUi-origin {
+    .noUi-handle {
+      height: 30px;
+      width: 30px;
+      top: -11px;
+      border: 0;
+      box-shadow: 0 35x 7px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      border: 1px solid $page-bg-color;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .noUi-connect {
+    background: $bg-color-theme;
+  }
+}
+
+.counter-number {
+  border: 1px solid $page-bg-color;
+  background: white;
+  border-radius: 20px;
+  padding: 1px;
+  display: inline-block;
+  & > span {
+    min-width: 18px;
+    display: inline-block;
+    text-align: center;
+  }
+  & > .btn {
+    background-color: $page-bg-color;
+    color: $bg-color-theme;
+  }
+}
+.progress {
+  background-color: rgba($text-color-theme, 0.3);
+
+  &.theme-color {
+    background-color: rgba($bg-color-theme, 0.1);
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  z-index: 7;
+  .dropdown-menu {
+    z-index: 9;
+  }
+  .dropdown-toggle {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.wizard-wrapper {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  background-color: rgba($card-color, 0.625);
+  background-repeat: repeat;
+  @extend .blur;
+
+  .wizard-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    i {
+      background-color: rgba($card-color, 0.75);
+      height: 54px;
+      width: 54px;
+      border-radius: 10px;
+      line-height: 54px;
+      display: inline-block;
+      font-size: 26px;
+      color: $text-color-theme-secondary;
+      margin-bottom: 5px;
+    }
+    .wizard-text {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      color: $text-color-theme-primary;
+      font-size: 10px;
+      line-height: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 16px;
+        height: 2px;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &.active {
+      i {
+        background-color: $bg-color-theme;
+        color: $text-color-theme;
+      }
+      .wizard-text {
+        color: $bg-color-theme;
+
+        &::after {
+          background-color: $bg-color-theme;
+        }
+      }
+    }
+    &.filled {
+      i {
+        background-color: $green;
+        color: $text-color-theme;
+      }
+      .wizard-text {
+        color: $green;
+      }
+    }
+  }
+}
+
+.amountfield {
+  background: transparent;
+  padding: 5px 15px;
+  line-height: 50px;
+  font-size: 50px;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}

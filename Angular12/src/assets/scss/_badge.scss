@@ -1,0 +1,19 @@
+.badge-new {
+  padding: 7px 15px;
+  line-height: 30px;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 25px;
+  color: $text-color-theme-secondary;
+  background-color: rgba($card-color, 0.65);
+  @extend .blur;
+  
+  &:hover {
+    color: $text-color-theme;
+    background-color: rgba($bg-color-theme, 0.50);
+  }
+  &.active {
+    color: $text-color-theme;
+    background-color: rgba($bg-color-theme, 0.85);
+  }
+}

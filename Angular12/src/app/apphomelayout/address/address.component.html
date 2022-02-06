@@ -1,0 +1,102 @@
+<div class="main-container container top-20">
+    <!-- wizard links -->
+    <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+        <div class="col">
+            <a routerLink="/cart" class="wizard-link filled" routerLinkActive='active'>
+                <i class="bi bi-bag shadow-sm"></i>
+                <span class="wizard-text">Products</span>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="/address" class="wizard-link" routerLinkActive='active'>
+                <i class="bi bi-geo-alt shadow-sm"></i>
+                <span class="wizard-text">Address</span>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="/payment" class="wizard-link" routerLinkActive='active'>
+                <i class="bi bi-credit-card shadow-sm"></i>
+                <span class="wizard-text">Payment</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- address -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Delivery location</h5>
+        </div>
+        <div class="col-auto pe-0 align-self-center">
+            <a routerLink="/addresses" class="link text-color-theme">Change <i class="bi bi-chevron-right"></i></a>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm product mb-3">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h5 class="mb-0">Maxartkiller<br>
+                                <span class="text-opac small">Primary</span>
+                            </h5>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a routerLink="/addaddresses" class="btn btn-link text-color-theme"><i class="bi bi-pencil "></i></a>
+                            <a routerLink="/addaddresses" class="btn btn-link text-color-theme"><i class="bi bi-plus size-24"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/map.png" alt="" class="w-100 mb-3">
+                    <div class="row">
+                        <div class="col">
+                            B 32, maker street 4, Beside Train Tower, Algobbaalsa,<br>California- 25468 (US)
+                        </div>
+                        <div class="col-auto text-end">
+                            <i class="bi bi-arrow-up-right-circle text-color-theme"></i><br>
+                            <small class="text-opac">2.5km <i class="bi bi-geo-alt"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pricing -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Pricing</h5>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <p>Shipping Cost</p>
+        </div>
+        <div class="col-auto">$ 10.00</div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <p>Subtotal</p>
+        </div>
+        <div class="col-auto">$ 32.00</div>
+    </div>
+
+    <div class="row fw-bold mb-4">
+        <div class="mb-3 col-12">
+            <div class="dashed-line"></div>
+        </div>
+        <div class="col">
+            <p>Total</p>
+        </div>
+        <div class="col-auto">$ 42.00</div>
+    </div>
+
+    <!-- Button -->
+    <div class="row mb-3">
+        <div class="col align-self-center d-grid">
+            <a routerLink="/payment" class="btn btn-default btn-lg shadow-sm">Payment</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+<div class="row h-100">
+    <div class="col-12 text-center">
+        <div class="logo-small">
+            <img src="assets/img/logo.png" alt="" class="img">
+            <h6>GO<br><small>MobileUX</small></h6>
+        </div>
+    </div>
+    <div class="col-12 mx-auto text-center">
+        <div class="row h-100">
+            <div class="col-12 align-self-center">
+
+                <swiper class="swiper-intro" [slidesPerView]="1" [spaceBetween]="15" [pagination]="{el: '.pagination-intro'}">
+                    <ng-template swiperSlide>
+                        <img src="assets/img/Banner.png" alt="Logo" class="mw-100">
+                        <div class="row">
+                            <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                                <h2>Best quality &<br>Always on time</h2>
+                                <p>Online speedy delivery, Quality products, best in the design, flexible
+                                    components and save time save money</p>
+                            </div>
+                        </div>
+                    </ng-template>
+
+                    <ng-template swiperSlide>
+                        <img src="assets/img/Banner3.png" alt="Logo" class="mw-100">
+                        <div class="row">
+                            <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                                <h2>Get any slice!<br>Works any place</h2>
+                                <p>Online speedy delivery, Quality products, best in the design, flexible
+                                    components and save time save money</p>
+                            </div>
+                        </div>
+                    </ng-template>
+
+                    <ng-template swiperSlide>
+                        <img src="assets/img/Banner2.png" alt="Logo" class="mw-100">
+                        <div class="row">
+                            <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                                <h2>Best Individual<br>Flexible widgets</h2>
+                                <p>Online speedy delivery, Quality products, best in the design, flexible
+                                    components and save time save money</p>
+                            </div>
+                        </div>
+                    </ng-template>
+                </swiper>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-12 text-center align-self-end py-2">
+        <div class="row">
+            <div class="col align-self-center">
+                <div class="pagination pagination-intro position-relative text-start"></div>
+            </div>
+            <div class="col text-end">
+                <a routerLink="/signin" class="btn btn-link px-0">Sign in <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

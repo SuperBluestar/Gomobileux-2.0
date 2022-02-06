@@ -1,0 +1,162 @@
+.has-footer {
+  padding-bottom: 66px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba($footer-color, 0.75);
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  -webkt-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  @extend .blur;
+
+  ul {
+    align-items: center;
+    max-width: 480px;
+    margin: 0 auto;   
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    li {
+      height: 66px;
+      list-style: none;
+      flex-basis: 0;
+      flex-grow: 1;
+      text-align: center;
+
+      a {
+        text-align: center;
+        background: transparent;
+        align-self: center;
+        -webkit-align-self: center;
+        -moz-align-self: center;
+        line-height: 40px;
+        position: relative;
+        padding: 11px 15px;
+        display: block;
+
+        span {
+          line-height: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          color: #999999;
+
+          i, .icons {
+            font-size: 16px;
+            height: 24px;
+            line-height: 24px;
+            width: 24px;
+            display: inline-block;
+            margin: 0 auto;
+          }
+          .nav-text {
+            font-size: 10px;
+            line-height: 18px;
+            vertical-align: middle;
+            display: none;
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 90%;
+          left: 5%;
+          bottom: 0px;
+          height: 4px;
+          border-radius: 3px;
+          display: block;
+          margin: 0 auto;
+          background: var(--f7-theme-color);
+          display: none;
+        }
+        &.active {
+          color: var(--f7-theme-color);
+          span {
+            i, .icons {
+              color: var(--f7-theme-color);
+            }
+          }
+          &:after {
+            display: block;
+          }
+        }
+      }
+
+      &.center-item {
+        a {
+          & > span {
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            border-radius: 30px;
+            padding: 0;
+            display: inline-block;
+            margin: -30px auto 0 auto;
+            text-align: center;
+            background: var(--f7-theme-color) repeat-x top left;
+            color: var(--page-bg-color);
+            background: -moz-linear-gradient(
+              top,
+              var(--f7-theme-color-0) 0%,
+              var(--f7-theme-color) 50%,
+              var(--f7-theme-color-2) 100%
+            );
+            background: -webkit-linear-gradient(
+              top,
+              var(--f7-theme-color-0) 0%,
+              var(--f7-theme-color) 50%,
+              var(--f7-theme-color-2) 100%
+            );
+            background: linear-gradient(
+              to bottom,
+              var(--f7-theme-color-0) 0%,
+              var(--f7-theme-color) 50%,
+              var(--f7-theme-color-2) 100%
+            );
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+            -webkt-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+            vertical-align: middle;
+            position: relative;
+            i, .icons {
+              font-size: 24px;
+              margin-top: -3px;
+              color: var(--f7-theme-text-color);
+            }
+            .countercart {
+              height: 20px;
+              width: 20px;
+              line-height: 20px;
+              border-radius: 15px;
+              background-color: $color-danger;
+              color: var(--f7-theme-text-color);
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.page .messagebar {
+  padding: 8px 10px;
+  background-color: var(--f7-bars-bg-color);
+  -moz-backdrop-filter: saturate(180%) blur(var(--f7-bars-translucent-blur));
+  -webkit-backdrop-filter: saturate(180%) blur(var(--f7-bars-translucent-blur));
+  backdrop-filter: saturate(180%) blur(var(--f7-bars-translucent-blur));
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  -webkt-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,116 @@
+.text-opac {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+
+  small {
+    font-size: 70%;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.lh-small{
+    line-height:1.1;
+  }
+}
+strong {
+  font-weight: 400;
+}
+
+small,
+.small {
+  font-size: 11px;
+  display: inline-block;
+  line-height: 14px;
+}
+.fw-bold{
+  font-weight: 700
+}
+.text-normal {
+  text-decoration: none;
+}
+.text-color-theme {
+  color: $bg-color-theme;
+}
+
+.text-opac {
+  opacity: 0.65;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+.size-22 {
+  font-size: 22px;
+  line-height: 22px;
+}
+.size-24 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.size-32 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 29px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 22px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 20px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 17px;
+  }
+}

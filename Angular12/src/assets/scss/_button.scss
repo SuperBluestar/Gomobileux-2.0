@@ -1,0 +1,131 @@
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 1em;
+
+  &.btn-link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 0.875rem 1.15rem;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+.btn-default {
+  color: $button-default-text-color;
+  background-color: $button-default-bg-color;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    background-color: darken($button-default-bg-color, 7%);
+  }
+
+  &:active,
+  .active {
+    color: inherit;
+    background-color: darken($button-default-bg-color, 14%);
+  }
+}
+
+.btn-theme {
+  color: $text-color-theme;
+  background-color: $bg-color-theme;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    background-color: darken($bg-color-theme, 7%);
+  }
+
+  &:active,
+  .active {
+    color: inherit;
+    background-color: darken($bg-color-theme, 14%);
+  }
+}
+
+.btn-outline-pink {
+  color: $pink;
+  border-color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $text-color-theme;
+    background-color: darken($pink, 7%);
+  }
+
+  &:active,
+  .active {
+    color: $text-color-theme;
+    background-color: darken($pink, 14%);
+  }
+}
+
+
+.btn-outline-theme {
+  color: $bg-color-theme;
+  border-color:$bg-color-theme;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    background-color: darken($bg-color-theme, 7%);
+  }
+
+  &:active,
+  .active {
+    color: inherit;
+    background-color: darken($bg-color-theme, 14%);
+  }
+}
+
+.btn-check:checked + label.btn-outline-theme {
+  color: $text-color-theme;
+  background-color: $bg-color-theme;
+}
+
+.btn-gradient {
+  background: $bg-color-theme;
+  background: -moz-linear-gradient(
+    top,
+    $color-gradient-1 0%,
+    $color-gradient-2 50%,
+    $color-gradient-3 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $color-gradient-1 0%,
+    $color-gradient-2 50%,
+    $color-gradient-3 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $color-gradient-1 0%,
+    $color-gradient-2 50%,
+    $color-gradient-3 100%
+  );
+  color: $text-color-theme;
+  background-size: cover;
+  border: 0;
+}
+.link {
+  text-decoration: none;
+  padding: 0px 15px;
+  display: block;
+  text-align: center;
+
+  &:hover, &:focus{
+    color: darken($bg-color-theme, 14%);
+  }
+}

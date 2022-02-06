@@ -1,0 +1,116 @@
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: $text-color-theme-primary;
+
+  & > div {
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgba($card-color, 0.75);
+    @extend .blur;
+  }
+
+  &.card-light {
+    &::before {
+      background-color: rgba($card-color, 0.4);
+    }
+  }
+
+  &.card-theme {
+    color: $text-color-theme;
+    .card-body {
+      color: $text-color-theme;
+
+      .card:not(.card-light) {
+        background-color: $text-color-theme;
+        color: $text-color-theme-primary;
+
+        .card-body {
+          color: $text-color-theme-primary;
+        }
+      }
+    }
+    &::before {
+      background-color: rgba($bg-color-theme, 0.65);
+    }
+  }
+
+  .card-header {
+    padding: 0.875rem 1rem;
+    background: none;
+    border-color: rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    h5 {
+      line-height: 1rem;
+    }
+    &:first-child {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  .card-body {
+    color: $text-color-theme-primary;
+  }
+  .card-footer {
+    padding: 0.875rem 1rem;
+    background: none;
+    border-color: rgba(0, 0, 0, 0.05);
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  & > .list-group, & > .list-group.bg-none{
+    background: transparent;
+
+    .list-group-item {
+      background: transparent !important;
+    }
+  }
+  & > .list-group:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  & > .list-group:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.accordion {
+  border-radius: 10px;
+  background-color: rgba($card-color, 0.75);
+  margin-bottom: 5px;
+  @extend .blur;
+
+  .accordion-item {
+    background: transparent;
+    &:first-child {
+      .accordion-header {
+        border-radius: 10px 10px 0 0;
+        .accordion-button {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      .accordion-header {
+        border-radius: 0 0 10px 10px;
+
+        .accordion-button.collapsed {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}

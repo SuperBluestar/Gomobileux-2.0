@@ -1,0 +1,19 @@
+.modal {
+    .modal-dialog {
+      .modal-content {
+        border-radius: 10px;
+        background-color: rgba($card-color, 0.9);
+        @extend .blur;
+  
+        &.product {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .modal-backdrop {
+    opacity: 1;
+    background-color: rgba($bg-color-theme, 0.75);
+  }
+  

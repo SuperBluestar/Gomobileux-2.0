@@ -1,0 +1,179 @@
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+select,
+textarea {
+  padding: 0.625rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  background-color: #ffffff;
+  max-width: 100%;
+  width: 100%;
+}
+label.small {
+  margin-bottom: 10px;
+  display: block;
+}
+.item-input-wrap,
+.ios .item-input-wrap,
+.md .item-input-wrap {
+  position: relative;
+  margin: 0;
+}
+
+.progressbar {
+  background-color: rgba($color-secondary, 0.35);
+}
+.card {
+  .progressbar {
+    background-color: rgba($text-secondary, 0.08);
+  }
+}
+
+/* range picker slider */
+.noUi-target {
+  background: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: darken($color-secondary, 3%);
+  border: 1px solid darken($color-secondary, 5%);
+
+  &.noUi-horizontal {
+    height: 10px;
+  }
+
+  .noUi-origin {
+    .noUi-handle {
+      height: 30px;
+      width: 30px;
+      top: -11px;
+      border: 0 none;
+      box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      border: 1px solid $color-secondary;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .noUi-connect {
+    background: var(--f7-theme-color);
+  }
+}
+.stepper-button,
+.stepper-button-minus,
+.stepper-button-plus {
+  width: 30px;
+}
+
+.button-44 {
+  height: 44px;
+}
+
+input.calendar-daterange {
+  background: transparent;
+  padding: 0;
+  line-height: 30px;
+}
+
+.wizard-wrapper {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  background-color: rgba($card-color, 0.625);
+  background-repeat: repeat;
+  @extend .blur;
+
+  .wizard-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    i {
+      background-color: rgba($card-color, 0.75);
+      height: 54px;
+      width: 54px;
+      border-radius: 10px;
+      line-height: 54px;
+      display: inline-block;
+      font-size: 26px;
+      color: var(--f7-theme-text-color);
+      margin-bottom: 5px;
+    }
+    .wizard-text {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      color: var(--f7-theme-text-color);
+      font-size: 10px;
+      line-height: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 16px;
+        height: 2px;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &.active {
+      i {
+        background-color: var(--f7-theme-color);
+        color: var(--f7-theme-dark-text-color);
+      }
+      .wizard-text {
+        color: var(--f7-theme-color);
+
+        &::after {
+          background-color: var(--f7-theme-color);
+        }
+      }
+    }
+    &.filled {
+      i {
+        background-color: $color-success;
+        color: var(--f7-theme-dark-text-color);
+      }
+      .wizard-text {
+        color: $color-success;
+      }
+    }
+  }
+}
+
+.amountfield {
+  background: transparent;
+  padding: 5px 15px;
+  line-height: 50px;
+  font-size: 50px;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}

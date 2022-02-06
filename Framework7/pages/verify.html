@@ -1,0 +1,51 @@
+<template>
+  <div class="page dark-bg" data-name="verify">
+    <div class="page-content no-padding-top">
+      <div class="overlay-image text-end">
+        <img src="img/pineapple.png" class="orange-slice" alt="" />
+      </div>
+      <div class="block h-100">
+        <div class="row h-100">
+          <div class="col-100 text-align-center">
+            <div class="logo-small">
+              <img src="img/logo.png" alt="" class="img" />
+              <h6>GO<br /><small>MobileUX</small></h6>
+            </div>
+          </div>
+          <div class="col-85 medium-50 large-40 text-align-center mx-auto align-self-center">
+            <h2 class="text-center">OTP Verification</h2>
+            <p class="margin-bottom">Verify OTP sent to your provided email address and phone number</p>
+
+            <div class="card card-light elevation-2 margin-bottom">
+              <div class="card-content card-content-padding">
+                <div class="list form-list no-margin margin-bottom-half">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-floating-label">Password</div>
+                        <div class="item-input-wrap">
+                          <input type="password" name="Password" value="111111111111" />
+                          <span class="input-clear-button"></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <a href="/thankyou/" target="_self" class="button button-fill button-large color-green elevation-3">
+                  Confirm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-100 text-align-center margin-bottom-half margin-top-auto">
+            <span class="progressstimer">
+              <img src="img/progress.png" alt="" />
+              <span class="timer" id="timer">03:15</span>
+            </span>
+            <br />
+            <button class="button text-color-white" disabled>Resend OTP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

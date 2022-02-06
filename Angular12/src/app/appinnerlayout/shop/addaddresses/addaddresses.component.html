@@ -1,0 +1,86 @@
+<!-- Header -->
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a routerLink="/pages" class="btn btn-link back-btn text-color-theme">
+                <i class="bi bi-arrow-left size-20"></i>
+            </a>
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0">Add Address</h5>
+        </div>
+        <div class="col-auto align-self-center">
+            <a routerLink="/profile" class="link text-color-theme">
+                <i class="bi bi-person-circle size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Header ends -->
+<!-- main page content -->
+<div class="main-container container">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="rounded d-block overlfow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53231.962811927515!2d-117.15726395005734!3d33.5014375970648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db6252f51abe23%3A0x68bc0e88a03806a8!2sTemecula%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623665123540!5m2!1sen!2sin"
+                    class="h-190 w-100 rounded shadow-sm" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-light shadow-sm mb-4">
+                <div class="card-body">
+                    <form class="">
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="select">
+                                <option>Austrailia</option>
+                                <option>Austria</option>
+                                <option>Brazil</option>
+                                <option>Bulgaria</option>
+                                <option>Chile</option>
+                                <option>Canada</option>
+                                <option>Egypt</option>
+                                <option>Germany</option>
+                                <option>India</option>
+                                <option>United Kingdom</option>
+                                <option selected>United Stats</option>
+                            </select>
+                            <label for="select">Country</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="pincode" placeholder="Pincode" value="55685246">
+                            <label for="username">Pincode</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="select2">
+                                <option selected>California</option>
+                                <option>San Jose</option>
+                                <option>New York</option>
+                            </select>
+                            <label for="select2">States</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="city" placeholder="City" value="San Jose">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="street" placeholder="Street" value="San Carlos - 23B">
+                            <label for="city">Street</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="homeblock" placeholder="Home/Block" value="B 15">
+                            <label for="city">Home/Block</label>
+                        </div>
+                    </form>
+                    <div class="d-grid"><a routerLink="/changeaddress" class="btn btn-lg btn-default shadow-sm">Add/Update</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- main page content ends -->

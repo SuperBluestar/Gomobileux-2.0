@@ -1,0 +1,214 @@
+<!-- Header -->
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a routerLink="/pages" class="btn btn-link back-btn text-color-theme">
+                <i class="bi bi-arrow-left size-20"></i>
+            </a>
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0">Invoice</h5>
+        </div>
+        <div class="col-auto align-self-center">
+            <a routerLink="/profile" class="link text-color-theme">
+                <i class="bi bi-person-circle size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Header ends -->
+
+<!-- main page content -->
+<div class="main-container container">
+    <!-- Invoice content -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-success text-white py-4 rounded border-0">
+            <div class="row">
+                <div class="col-auto">
+                    <h6 class="mb-1">INVOICE</h6>
+                    <p>Order Id: <b>#123456</b></p>
+                </div>
+                <div class="col text-end">
+                    <h6 class="mb-1"><i class="bi bi-check-circle"></i> Paid</h6>
+                    <p>GSTIN: <b>07124AEIPJ54</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="mb-2 fw-bold">Sold By:</p>
+                    <p class="text-opac">John Smith,
+                        <br> 1234 Main Apt., 4B Springfield,<br>ST 54321</p>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="mb-2 fw-bold">Billed To:</p>
+                    <p class="text-opac">John Smith,
+                        <br> 1234 Main Apt., 4B Springfield,<br>ST 54321</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="mb-2 fw-bold">Payment Method:</p>
+                    <p class="text-opac ">Visa ending **** 4242
+                        <br>
+                        <a routerLink="">jsmith@maxartkiller.com</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="mb-2 fw-bold">Order Date:</p>
+                    <p class="text-opac">Aug 7, 2021
+                        <br><span class="text-danger">Payment due Aug 1, 2021</span></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ordered items -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Ordered items</h5>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm product mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center avatar-70 avatar">
+                                <img src="assets/img/product1.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col ps-0 align-self-center">
+                            <p class="mb-0">
+                                <small class="text-opac">Fresh</small>
+                            </p>
+                            <h6 class="text-color-theme">Apple</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-primary">Arriving Today</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a routerLink="track.html" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm product mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center avatar-70 avatar">
+                                <img src="assets/img/product2.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col ps-0">
+                            <p class="mb-0">
+                                <small class="text-opac">Protein</small>
+                            </p>
+                            <h6 class="text-color-theme">Banana</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Arriving on 22 Aug</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a routerLink="/orderdetail" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm product mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center avatar-70 avatar">
+                                <img src="assets/img/product3.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col ps-0">
+                            <p class="mb-0">
+                                <small class="text-opac">Healthy</small>
+                            </p>
+                            <h6 class="text-color-theme">Watermelon</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Arriving on 29 Dec</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a routerLink="/orderdetail" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pricing -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Pricing</h5>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <p>Shipping Cost</p>
+        </div>
+        <div class="col-auto">$ 10.00</div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <p>Subtotal</p>
+        </div>
+        <div class="col-auto">$ 32.00</div>
+    </div>
+
+    <div class="row fw-bold mb-4">
+        <div class="mb-3 col-12">
+            <div class="dashed-line"></div>
+        </div>
+        <div class="col">
+            <p>Total</p>
+        </div>
+        <div class="col-auto">$ 42.00</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <p>We recommend power services for our customers</p>
+            <br>
+            <div class="text-end mb-4">
+                <p class="text-opac mb-0">Authorise Signature</p>
+                <p class="fw-bold">Maxartkiller</p>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <div class="row mb-4">
+                <div class="col-6 ">
+                    <a routerLink="/faqs" class="link text-color-theme px-0">Need Help <i class="bi bi-arrow-right mx-1"></i></a>
+                </div>
+                <div class="col-6 text-end d-grid">
+                    <button class="btn btn-default shadow"><i class="bi bi-printer mx-1"></i> Print</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- main page content ends -->

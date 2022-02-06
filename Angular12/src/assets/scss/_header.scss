@@ -1,0 +1,48 @@
+.header {
+  padding: 0px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  height: 64px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  -webkt-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba($header-color, 0.65);
+  @extend .blur;
+
+  .menu-btn {
+    font-size: 20px;
+  }
+
+  .logo-small{
+    img {
+      vertical-align: middle;
+      width: 58px;
+    }
+    h6{font-size: 30px;
+      line-height: 15px;
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px 0 0 -5px;
+      vertical-align: middle;
+      text-shadow: none;
+      -webkit-text-shadow: none;
+      -moz-text-shadow: none;
+      span,
+      small,
+      .small {
+        font-size: 10px;
+        font-weight: 400;
+      }
+     
+    }
+  }
+}
+
+main {
+  &.has-header {
+    padding-top: 84px;
+  }
+}

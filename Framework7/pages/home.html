@@ -1,0 +1,1365 @@
+<template>
+  <div class="page page-home" data-name="home">
+    <div class="navbar ">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left  no-margin-right">
+          <a href="#" class="link icon-only panel-open " data-panel="left">
+            <i class="icon f7-icons size-22">bars</i>
+          </a>
+        </div>
+        <div class="title text-align-center">
+          <div class="logo-small">
+            <img src="img/logo.png" alt="" class="img" />
+            <h6>GO<br /><small>MobileUX</small></h6>
+          </div>
+        </div>
+        <div class="right text-align-center">
+          <a href="/profile/" class="link ">
+            <i class="icon f7-icons size-22">person_circle</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter nested panel -->
+    <div class="panel panel-right panel-cover panel-init elevation-3" id="panel-right-filter"
+      data-container-el="#panel-page" data-backdrop="false">
+      <div class="page">
+        <div class="page-content">
+          <div class="block bg-white-opac margin-bottom padding-top padding-bottom">
+            <div class="row">
+              <div class="col">
+                <h6 class="no-margin-bottom">Filter Criteria</h6>
+                <p class="small text-muted">2154 products</p>
+              </div>
+              <div class="col-auto align-self-center">
+                <button class="button panel-close no-padding">
+                  <i class="icon f7-icons size-18">multiply</i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="margin-bottom">
+              <h6>Select Range</h6>
+              <div id="rangeslider" class="margin-top"></div>
+            </div>
+
+            <div class="row margin-bottom">
+              <div class="col">
+                <label for="input-number" class="small text-muted">Minimum</label>
+                <input type="number" min="0" max="500" value="100" step="1" id="input-select" />
+              </div>
+              <div class="col-auto align-self-center">
+                <label class="small"></label>
+                to
+              </div>
+              <div class="col">
+                <label for="input-number" class="small text-muted">Maximum</label>
+                <input type="number" class="form-control" min="0" max="500" value="200" step="1" id="input-number" />
+              </div>
+            </div>
+
+            <div class="margin-bottom">
+              <label for="filtertype" class="small text-muted">Select Shopping Type</label>
+              <div class="card shadow-none">
+                <div class="list">
+                  <ul class="no-background">
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="demo-checkbox" value="Books" checked="men" />
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">Men</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="demo-checkbox" value="women" />
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">Women</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="demo-checkbox" value="kids" />
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">Kids</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-checkbox item-content">
+                        <input type="checkbox" name="demo-checkbox" value="home" />
+                        <i class="icon icon-checkbox"></i>
+                        <div class="item-inner">
+                          <div class="item-title">Home</div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="margin-bottom">
+              <label for="input-select" class="small text-muted">Keyword</label>
+              <input type="text" class="form-control" placeholder="Keyword" />
+            </div>
+
+            <div class="margin-bottom">
+              <label for="discount" class="small text-muted">Offer Discount</label>
+              <select class="form-control" id="discount">
+                <option>10% </option>
+                <option>30%</option>
+                <option>50%</option>
+                <option>80%</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="block margin-bottom">
+            <button class="button button-fill button-raised button-large">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="page-content has-footer">
+      <!-- main page content -->
+      <div class="main-container container">
+
+        <!-- search -->
+        <div class="block">
+          <div class="row margin-bottom">
+            <div class="col">
+              <div class="list form-list no-margin">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-floating-label">Search</div>
+                      <div class="item-input-wrap">
+                        <input type="text" name="search" />
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="button button-fill panel-open button-large padding elevation-3"
+                data-panel="#panel-right-filter"><i class="icon f7-icons">line_horizontal_3_decrease</i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- categories -->
+        <div class="block">
+          <div class="swiper-container categoriesswiper margin-bottom-half">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/berry-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Fruits</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/lemon-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Lemon</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/banana-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Banana</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/apple-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Apple</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/berry-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Fruits</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/lemon-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Lemon</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/banana-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Banana</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/apple-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Apple</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/berry-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Fruits</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/lemon-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Lemon</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/banana-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Banana</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/apple-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Apple</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/berry-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Fruits</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/lemon-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Lemon</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/banana-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Banana</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2">
+                  <div class="card-content card-content-padding">
+                    <img src="img/apple-small.png" alt="" />
+                  </div>
+                </div>
+                <p class="categoryname">Apple</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- offerslides -->
+        <div class="block">
+          <div class="swiper-container offerslides margin-bottom-half">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card elevation-2 card-theme">
+                  <div class="card-content card-content-padding ">
+                    <div class="row">
+                      <div class="col-50">
+                        <img src="img/Banner.png" alt="" class="mw-100" />
+                      </div>
+                      <div class="col text-align-left align-self-center no-padding-left">
+                        <h6 class="fw-normal no-margin-bottom">Season Discount</h6>
+                        <h2>50% OFF</h2>
+                        <p>Use Code<br /><strong>"SEASON01"</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card elevation-2 card-theme">
+                  <div class="card-content card-content-padding ">
+                    <div class="row">
+                      <div class="col-50">
+                        <img src="img/Banner3.png" alt="" class="mw-100" />
+                      </div>
+                      <div class="col text-align-left align-self-center no-padding-left">
+                        <h6 class="fw-normal no-margin-bottom">Special Discount</h6>
+                        <h2>65% OFF</h2>
+                        <p>Use Code<br /><strong>"NEW004"</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card elevation-2 card-theme">
+                  <div class="card-content card-content-padding ">
+                    <div class="row">
+                      <div class="col-50">
+                        <img src="img/Banner2.png" alt="" class="mw-100" />
+                      </div>
+                      <div class="col text-align-left align-self-center no-padding-left">
+                        <h6 class="fw-normal no-margin-bottom">Protein Discount</h6>
+                        <h2>20% OFF</h2>
+                        <p>Use Code<br /><strong>"REAL20BK"</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination pagination-offerslides"></div>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">Popular</h5>
+            </div>
+            <div class="col-auto">
+              <a href="" class="link text-color-theme">View All <i class="icons f7-icons">chevron_right</i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="row">
+            <div class="col-50 medium-33 large-25">
+              <div class="card elevation-2 product margin-bottom">
+                <div class="card-content card-content-padding">
+                  <figure class="text-align-center">
+                    <img src="img/product1.png" alt="" />
+                  </figure>
+                  <p class="">
+                    <small class="text-opac">Fresh</small>
+                    <small class="float-right"><span class="text-opac">4.5</span> <i
+                        class="icons f7-icons text-color-yellow">star</i></small>
+                  </p>
+                  <a href="/product/" class="text-normal margin-bottom-half display-block">
+                    <h6 class="text-color-theme">Red Apple</h6>
+                  </a>
+                  <div class="row">
+                    <div class="col">
+                      <p class="no-margin-bottom">$12.00<br /><small class="text-opac">per 1 kg</small></p>
+                    </div>
+                    <div class="col-auto no-padding-left">
+                      <button
+                        class="button avatar avatar-40 no-padding rounded-circle elevation-3 button-gradient popup-open"
+                        data-popup=".addproduct">
+                        <i class="icons f7-icons">plus</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50 medium-33 large-25">
+              <div class="card elevation-2 product margin-bottom">
+                <div class="card-content card-content-padding">
+                  <figure class="text-align-center">
+                    <img src="img/product2.png" alt="" />
+                  </figure>
+                  <p class="">
+                    <small class="text-opac">Protein</small>
+                    <small class="float-right"><span class="text-opac">4.5</span> <i
+                        class="icons f7-icons text-color-yellow">star</i></small>
+                  </p>
+                  <a href="/product/" class="text-normal margin-bottom-half display-block">
+                    <h6 class="text-color-theme">Best Banana</h6>
+                  </a>
+                  <div class="row">
+                    <div class="col">
+                      <p class="no-margin-bottom">$8.00<br /><small class="text-opac">per 12 pcs</small></p>
+                    </div>
+                    <div class="col-auto no-padding-left">
+                      <button
+                        class="button avatar avatar-40 no-padding rounded-circle elevation-3 button-gradient popup-open"
+                        data-popup=".addproduct">
+                        <i class="icons f7-icons">plus</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50 medium-33 large-25">
+              <div class="card elevation-2 product margin-bottom">
+                <div class="card-content card-content-padding">
+                  <figure class="text-align-center">
+                    <img src="img/product3.png" alt="" />
+                  </figure>
+                  <p class="">
+                    <small class="text-opac">Fresh</small>
+                    <small class="float-right"><span class="text-opac">4.5</span> <i
+                        class="icons f7-icons text-color-yellow">star</i></small>
+                  </p>
+                  <a href="/product/" class="text-normal margin-bottom-half display-block">
+                    <h6 class="text-color-theme">Watermelon</h6>
+                  </a>
+                  <div class="row">
+                    <div class="col">
+                      <p class="no-margin-bottom">$11.00<br /><small class="text-opac">per 1 kg</small></p>
+                    </div>
+                    <div class="col-auto no-padding-left">
+                      <button
+                        class="button avatar avatar-40 no-padding rounded-circle elevation-3 button-gradient popup-open"
+                        data-popup=".addproduct">
+                        <i class="icons f7-icons">plus</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50 medium-33 large-25">
+              <div class="card elevation-2 product margin-bottom">
+                <div class="card-content card-content-padding">
+                  <figure class="text-align-center">
+                    <img src="img/product4.png" alt="" />
+                  </figure>
+                  <p class="">
+                    <small class="text-opac">Fresh</small>
+                    <small class="float-right"><span class="text-opac">4.5</span> <i
+                        class="icons f7-icons text-color-yellow">star</i></small>
+                  </p>
+                  <a href="/product/" class="text-normal margin-bottom-half display-block">
+                    <h6 class="text-color-theme">Yellow Lemon</h6>
+                  </a>
+                  <div class="row">
+                    <div class="col">
+                      <p class="no-margin-bottom">$8.00<br /><small class="text-opac">per 1 kg</small></p>
+                    </div>
+                    <div class="col-auto no-padding-left">
+                      <button
+                        class="button avatar avatar-40 no-padding rounded-circle elevation-3 button-gradient popup-open"
+                        data-popup=".addproduct">
+                        <i class="icons f7-icons">plus</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PWA install -->
+        <div class="block">
+          <div class="row">
+            <div class="col-100">
+              <div class="card margin-bottom">
+                <div class="card-content card-content-padding">
+                  <h5>Install PWA</h5>
+                  <div class="row">
+                    <div class="col-65">
+                      <p>Click "Install" to install PWA app and experience as indepedent app.</p>
+                    </div>
+                    <div class="col-35">
+                      <button class="button button-fill button-large elevation-2 color-theme" id="addtohome">install</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">Are you looking for </h5>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="row">
+            <div class="col-100 margin-bottom-half">
+              <div class="badge-new margin-right-half margin-bottom-half elevation-2">Free Delivery</div>
+              <div class="badge-new active margin-right-half margin-bottom-half elevation-2">$ 1.00 - $ 10.00</div>
+              <div class="badge-new margin-right-half margin-bottom-half elevation-2">New</div>
+              <div class="badge-new margin-right-half margin-bottom-half elevation-2">$ 11.00 - $ 20.00</div>
+              <div class="badge-new margin-right-half margin-bottom-half elevation-2">Fresh</div>
+              <div class="badge-new margin-right-half margin-bottom-half elevation-2">Protein</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- trending items -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">Trending Items</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- trending -->
+        <div class="block">
+          <div class="swiper-container trendingslides">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card elevation-2 product margin-bottom">
+                  <figure class="text-align-center no-margin-bottom bg-light-warning">
+                    <img src="img/product1.png" alt="" />
+                  </figure>
+                  <div class="card-content card-content-padding">
+                    <p class="">
+                      <small class="text-opac">Fresh</small>
+                      <small class="float-right"><span class="text-opac">4.5</span> <i
+                          class="icons f7-icons text-color-yellow">star</i></small>
+                    </p>
+                    <a href="/product/" class="text-normal margin-bottom-half display-block">
+                      <h6 class="text-color-theme">Red Apple</h6>
+                    </a>
+                    <div class="row">
+                      <div class="col">
+                        <p>$12.00 <small class="text-opac">per 1 kg</small></p>
+                      </div>
+                      <div class="col-auto text-align-center">
+                        <!-- button counter increamenter-->
+                        <div class="counter-number">
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">minus</i>
+                          </button>
+                          <span>1</span>
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">plus</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2 product margin-bottom">
+                  <figure class="text-align-center no-margin-bottom bg-light-warning">
+                    <img src="img/product2.png" alt="" />
+                  </figure>
+                  <div class="card-content card-content-padding ">
+                    <p class="">
+                      <small class="text-opac">Protein</small>
+                      <small class="float-right"><span class="text-opac">4.5</span> <i
+                          class="icons f7-icons text-color-yellow">star</i></small>
+                    </p>
+                    <a href="/product/" class="text-normal margin-bottom-half display-block">
+                      <h6 class="text-color-theme">Best Banana</h6>
+                    </a>
+                    <div class="row">
+                      <div class="col">
+                        <p>$12.00 <small class="text-opac">per 1 kg</small></p>
+                      </div>
+                      <div class="col-auto text-align-center align-self-center">
+                        <!-- button counter increamenter-->
+                        <div class="counter-number">
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">minus</i>
+                          </button>
+                          <span>1</span>
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">plus</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2 product margin-bottom">
+                  <figure class="text-align-center no-margin-bottom bg-light-warning">
+                    <img src="img/product3.png" alt="" />
+                  </figure>
+                  <div class="card-content card-content-padding">
+                    <p class="">
+                      <small class="text-opac">Fresh</small>
+                      <small class="float-right"><span class="text-opac">4.5</span> <i
+                          class="icons f7-icons text-color-yellow">star</i></small>
+                    </p>
+                    <a href="/product/" class="text-normal margin-bottom-half display-block">
+                      <h6 class="text-color-theme">Watermelon</h6>
+                    </a>
+                    <div class="row">
+                      <div class="col">
+                        <p class="no-margin-bottom">$11.00 <small class="text-opac">per 1 kg</small></p>
+                      </div>
+                      <div class="col-auto text-align-center align-self-center">
+                        <!-- button counter increamenter-->
+                        <div class="counter-number">
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">minus</i>
+                          </button>
+                          <span>1</span>
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">plus</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card elevation-2 product margin-bottom">
+                  <figure class="text-align-center no-margin-bottom bg-light-warning">
+                    <img src="img/product4.png" alt="" />
+                  </figure>
+                  <div class="card-content card-content-padding">
+                    <p class="">
+                      <small class="text-opac">Fresh</small>
+                      <small class="float-right"><span class="text-opac">4.5</span> <i
+                          class="icons f7-icons text-color-yellow">star</i></small>
+                    </p>
+                    <a href="/product/" class="text-normal margin-bottom-half display-block">
+                      <h6 class="text-color-theme">Yellow Lemon</h6>
+                    </a>
+                    <div class="row">
+                      <div class="col">
+                        <p class="no-margin-bottom">$8.00 <small class="text-opac">per 1 kg</small></p>
+                      </div>
+                      <div class="col-auto text-align-center align-self-center">
+                        <!-- button counter increamenter-->
+                        <div class="counter-number">
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">minus</i>
+                          </button>
+                          <span>1</span>
+                          <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                            <i class="icons f7-icons">plus</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Near by shops -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">Near by shop</h5>
+            </div>
+          </div>
+        </div>
+        <!-- shop slides -->
+        <div class="block">
+          <div class="row">
+            <div class="col-100 no-padding">
+              <div class="swiper-container shopslides margin-bottom">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card elevation-2 ">
+                      <div class="card-content card-content-padding">
+                        <div class="row">
+                          <div class="col-auto">
+                            <figure class="text-align-center no-margin-bottom avatar avatar-60 page-bg rounded">
+                              <i class="icons f7-icons text-color-theme">building_2_fill</i>
+                            </figure>
+                          </div>
+                          <div class="col no-padding-left">
+                            <a href="#" class="text-normal text-color-theme">
+                              <h6 class="">Atlanicaa Food <i
+                                  class="icons f7-icons text-color-theme float-right">arrow_up_right_circle</i></h6>
+                            </a>
+                            <p class="">B-49, Feirra Street</p>
+                            <p class="small display-block">
+                              <span class="text-opac">10:00am - 11:00pm</span>
+                              <span class="float-right"><span class="text-opac">2.5km</span> <i
+                                  class="icons f7-icons">placemark</i></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card elevation-2">
+                      <div class="card-content card-content-padding">
+                        <div class="row">
+                          <div class="col-auto">
+                            <figure class="text-align-center no-margin-bottom avatar avatar-60 page-bg rounded">
+                              <i class="icons f7-icons text-color-theme">building_2_fill</i>
+                            </figure>
+                          </div>
+                          <div class="col no-padding-left">
+                            <a href="#" class="text-normal text-color-theme">
+                              <h6 class="">Milbar Food <i
+                                  class="icons f7-icons text-color-theme float-right">arrow_up_right_circle</i></h6>
+                            </a>
+                            <p class="">A-39, Axaar Street</p>
+                            <p class="small display-block">
+                              <span class="text-opac">10:00am - 11:00pm</span>
+                              <span class="float-right"><span class="text-opac">2.5km</span> <i
+                                  class="icons f7-icons">placemark</i></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card elevation-2">
+                      <div class="card-content card-content-padding">
+                        <div class="row">
+                          <div class="col-auto">
+                            <figure class="text-align-center no-margin-bottom avatar avatar-60 page-bg rounded">
+                              <i class="icons f7-icons text-color-theme">building_2_fill</i>
+                            </figure>
+                          </div>
+                          <div class="col no-padding-left">
+                            <a href="#" class="text-normal text-color-theme">
+                              <h6 class="">Amazon Fresh<i
+                                  class="icons f7-icons text-color-theme float-right">arrow_up_right_circle</i></h6>
+                            </a>
+                            <p class="">C-49, Lothal at</p>
+                            <p class="small display-block">
+                              <span class="text-opac">10:00am - 11:00pm</span>
+                              <span class="float-right"><span class="text-opac">2.5km</span> <i
+                                  class="icons f7-icons">placemark</i></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- toast messages -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">Helpful actions</h5>
+            </div>
+          </div>
+          <div class="row margin-bottom">
+            <div class="col">
+              <div class="card elevation-2">
+                <div class="list ">
+                  <ul class="">
+                    <li class="item-content">
+                      <a href="#" class="item-inner item-cell open-full">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Notification Messsage</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="item-content">
+                      <a href="#" class="item-inner item-cell open-with-button">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Notification with Close</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="item-content">
+                      <a href="#" class="item-inner item-cell open-click-to-close">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Click to Close</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="item-content">
+                      <a href="#" class="item-inner item-cell open-callback-on-close">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Notification Callback</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="item-content" @click=${showToastBottom}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Bottom Toast</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastTop}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto">
+                            <i class="icon f7-icons">checkmark_alt_circle</i>
+                          </div>
+                          <div class="col no-padding-left">Top Toast</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastCenter}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Center Toast</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastIcon}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Toast with icon</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastLargeMessage}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto">
+                            <i class="icon f7-icons">checkmark_alt_circle</i>
+                          </div>
+                          <div class="col no-padding-left">Toast with message</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastWithButton}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Toast with Button</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastWithCustomButton}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto">
+                            <i class="icon f7-icons">checkmark_alt_circle</i>
+                          </div>
+                          <div class="col no-padding-left">Toast with custom button</div>
+                          <div class="col-auto margin-left-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content" @click=${showToastWithCallback}>
+                      <div class="item-inner item-cell text-color-theme">
+                        <div class="row">
+                          <div class="col-auto"><i class="icon f7-icons">checkmark_alt_circle</i></div>
+                          <div class="col no-padding-left">Call back Toast</div>
+                          <div class="col-auto align-self-center">
+                            <i class="icon f7-icons size-18 text-muted">chevron_right</i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--News and announcements -->
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col">
+              <h5 class="no-margin-bottom">News and Updates</h5>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="row margin-bottom-half">
+            <div class="col-100 medium-50 large-33">
+              <div class="card elevation-2 margin-bottom-half">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-auto">
+                      <figure class="text-align-center no-margin-bottom avatar avatar-100 coverimg page-bg rounded">
+                        <img src="img/news1.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="col no-padding-left">
+                      <p class="small display-block">
+                        <span class="text-opac">Trend setter</span>
+                        <span class="float-right"><span class="text-opac">26 July 2021</span> <i
+                            class="bi bi-clock"></i></span>
+                      </p>
+                      <a href="#" class="text-normal text-color-theme display-block margin-bottom-half">
+                        <h6>Best UI UX design with your loving frameworks</h6>
+                      </a>
+                      <div class="">
+                        <figure
+                          class="text-align-center no-margin-bottom avatar avatar-20 rounded coverimg margin-right-half">
+                          <img src="img/user2.jpg" alt="" />
+                        </figure>
+                        Archana Singh
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-100 medium-50 large-33">
+              <div class="card elevation-2 margin-bottom-half">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-auto">
+                      <figure class="text-align-center no-margin-bottom avatar avatar-100 coverimg page-bg rounded">
+                        <img src="img/news2.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="col no-padding-left">
+                      <p class="small display-block">
+                        <span class="text-opac">ReadOut</span>
+                        <span class="float-right"><span class="text-opac">26 July 2021</span> <i
+                            class="bi bi-clock"></i></span>
+                      </p>
+                      <a href="#" class="text-normal text-color-theme  display-block margin-bottom-half">
+                        <h6>Make a distance from bad design & accept the change</h6>
+                      </a>
+                      <div class="">
+                        <figure
+                          class="text-align-center no-margin-bottom avatar avatar-20 rounded coverimg margin-right-half">
+                          <img src="img/user1.jpg" alt="" />
+                        </figure>
+                        John Doe
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-100 medium-50 large-33">
+              <div class="card elevation-2 margin-bottom-half">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-auto">
+                      <figure class="text-align-center no-margin-bottom avatar avatar-100 coverimg page-bg rounded">
+                        <img src="img/news3.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="col no-padding-left">
+                      <p class="small display-block">
+                        <span class="text-opac">FoodTechy</span>
+                        <span class="float-right"><span class="text-opac">26 July 2021</span> <i
+                            class="bi bi-clock"></i></span>
+                      </p>
+                      <a href="#" class="text-normal text-color-theme  display-block margin-bottom-half">
+                        <h6>Never regret of buying and trying new things</h6>
+                      </a>
+                      <div class="">
+                        <figure
+                          class="text-align-center no-margin-bottom avatar avatar-20 rounded coverimg margin-right-half">
+                          <img src="img/user3.jpg" alt="" />
+                        </figure>
+                        Laxmisho Johnson
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- add product popup-->
+        <div class="popup addproduct">
+          <div class="view">
+            <div class="page">
+              <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                  <div class="left">
+                    <a class="link popup-close"><i class="icons f7-icons">arrow_left</i></a>
+                  </div>
+                  <div class="title">Popup</div>
+                  <div class="right">
+                    <!-- Link to close popup -->
+                    <a class="link popup-close"><i class="icons f7-icons">multiply</i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="block margin-bottom">
+                  <figure class="text-center padding">
+                    <img src="img/apple.png" alt="" class="mw-100" />
+                  </figure>
+                </div>
+                <div class="block margin-bottom">
+                  <p class="margin-bottom-half">
+                    <small class="text-opac">Fresh</small>
+                    <small class="float-end"><span class="text-opac">4.5</span> <i
+                        class="bi bi-star-fill text-warning"></i></small>
+                  </p>
+                  <a href="product.html" class="text-normal display-block margin-bottom-half">
+                    <h6 class="text-color-theme">Red Apple</h6>
+                  </a>
+                  <div class="row">
+                    <div class="col">
+                      <p>$12.00<br /><small class="text-opac">per 1 kg</small></p>
+                    </div>
+                    <div class="col-auto">
+                      <!-- Stepper element -->
+                      <div class="stepper">
+                        <div class="stepper-button-minus"></div>
+                        <!-- Stepper value element -->
+                        <div class="stepper-value">10</div>
+                        <div class="stepper-button-plus"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <button type="button"
+                    class="button button-large button-fill color-green elevation-3 popup-close">Done<i
+                      class="icons f7-icons">arrow_right</i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- main page content ends -->
+
+    </div>
+
+    <!-- footer static -->
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <a class="active" href="/home/">
+              <span>
+                <i class="icon f7-icons">house</i>
+                <span class="nav-text">Home</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/stats/">
+              <span>
+                <i class="icon f7-icons">chart_bar</i>
+                <span class="nav-text">Stats</span>
+              </span>
+            </a>
+          </li>
+          <li class="center-item">
+            <a href="/cart/">
+              <span>
+                <i class="icon f7-icons">cart</i>
+                <span class="nav-text">card-content</span>
+                <span class="countercart">3</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/style/">
+              <span>
+                <i class="icon f7-icons">circle_grid_hex</i>
+                <span class="nav-text">Style</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/settings/">
+              <span>
+                <i class="icon f7-icons">gear</i>
+                <span class="nav-text">Settings</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+  </div>
+</template>
+<script>
+  export default (props, { $f7, $theme, $on }) => {
+    let toastBottom;
+    let toastTop;
+    let toastCenter;
+    let toastIcon;
+    let toastLargeMessage;
+    let toastWithButton;
+    let toastWithCustomButton;
+    let toastWithCallback;
+
+    const showToastBottom = () => {
+      // Create toast
+      if (!toastBottom) {
+        toastBottom = $f7.toast.create({
+          text: 'Product has been added',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastBottom.open();
+    }
+    const showToastTop = () => {
+      // Create toast
+      if (!toastTop) {
+        toastTop = $f7.toast.create({
+          text: 'Product has been added',
+          position: 'top',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastTop.open();
+    }
+    const showToastCenter = () => {
+      // Create toast
+      if (!toastCenter) {
+        toastCenter = $f7.toast.create({
+          text: 'Product has been added',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastCenter.open();
+    }
+    const showToastIcon = () => {
+      // Create toast
+      if (!toastIcon) {
+        toastIcon = $f7.toast.create({
+          icon: $theme.ios || $theme.aurora ? '<i class="f7-icons">cart</i>' : '<i class="material-icons">cart</i>',
+          text: 'Product has been added',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastIcon.open();
+    }
+    const showToastLargeMessage = () => {
+      // Create toast
+      if (!toastLargeMessage) {
+        toastLargeMessage = $f7.toast.create({
+          text: 'This toast contains a lot of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quae, ab. Delectus amet optio facere autem sapiente quisquam beatae culpa dolore.',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastLargeMessage.open();
+    }
+    const showToastWithButton = () => {
+      // Create toast
+      if (!toastWithButton) {
+        toastWithButton = $f7.toast.create({
+          text: 'Toast with additional close button',
+          closeButton: true,
+        });
+      }
+      // Open it
+      toastWithButton.open();
+    }
+    const showToastWithCustomButton = () => {
+      // Create toast
+      if (!toastWithCustomButton) {
+        toastWithCustomButton = $f7.toast.create({
+          text: 'Custom close button',
+          closeButton: true,
+          closeButtonText: 'Close Me',
+          closeButtonColor: 'red',
+        });
+      }
+      // Open it
+      toastWithCustomButton.open();
+    }
+    const showToastWithCallback = () => {
+      // Create toast
+      if (!toastWithCallback) {
+        toastWithCallback = $f7.toast.create({
+          text: 'Callback on close',
+          closeButton: true,
+          on: {
+            close: function () {
+              $f7.dialog.alert('Toast closed');
+            },
+          }
+        });
+      }
+      // Open it
+      toastWithCallback.open();
+    }
+
+    $on('pageBeforeOut', () => {
+      $f7.toast.close();
+    })
+
+    $on('pageBeforeRemove', () => {
+      // Destroy toasts when page removed
+      if (toastBottom) toastBottom.destroy();
+      if (toastTop) toastTop.destroy();
+      if (toastCenter) toastCenter.destroy();
+      if (toastIcon) toastIcon.destroy();
+      if (toastLargeMessage) toastLargeMessage.destroy();
+      if (toastWithButton) toastWithButton.destroy();
+      if (toastWithCustomButton) toastWithCustomButton.destroy();
+      if (toastWithCallback) toastWithCallback.destroy();
+    })
+
+
+    $on('pageInit', () => {
+      // Create full-layout notification
+      var notificationFull = $f7.notification.create({
+        icon: '<i class="icon f7-icons">cart</i>',
+        title: 'Product Added',
+        titleRightText: 'now',
+        subtitle: 'Thank you for purchase',
+        text: 'This is a simple notification message',
+        closeTimeout: 2000,
+      });
+
+      // Create notification with close button
+      var notificationWithButton = $f7.notification.create({
+        icon: '<i class="icon f7-icons">cart</i>',
+        title: 'Product Added to Cart',
+        subtitle: 'Thank you for purchase',
+        text: 'Click (x) button to close me',
+        closeButton: true,
+      });
+
+      // Create notification with click to close
+      var notificationClickToClose = $f7.notification.create({
+        icon: '<i class="icon f7-icons">cart</i>',
+        title: 'Product has been added',
+        titleRightText: 'now',
+        subtitle: 'Thank you for purchase',
+        text: 'Click me to close',
+        closeOnClick: true,
+      })
+
+      // With callback on close
+      var notificationCallbackOnClose = $f7.notification.create({
+        icon: '<i class="icon f7-icons">cart</i>',
+        title: 'Product just added',
+        titleRightText: 'now',
+        subtitle: 'Thank you for purchase',
+        text: 'Click me to close',
+        closeOnClick: true,
+        on: {
+          close: function () {
+            $f7.dialog.alert('Notification closed');
+          },
+        },
+      });
+
+      // Open Notifications
+      $('.open-full').on('click', function () {
+        notificationFull.open();
+      });
+      $('.open-with-button').on('click', function () {
+        notificationWithButton.open();
+      });
+      $('.open-click-to-close').on('click', function () {
+        notificationClickToClose.open();
+      });
+      $('.open-callback-on-close').on('click', function () {
+        notificationCallbackOnClose.open();
+      });
+    })
+
+    return $render;
+  }
+</script>

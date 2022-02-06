@@ -1,0 +1,76 @@
+<div class="main-container container">
+    <p class="text-center">Select best color scheme matches to your brand and application concepts.
+        All available in two layout color mode Light and Dark mode. Also change screens background images and
+        menu styles.</p>
+
+    <!-- layout modes selection -->
+    <div class="row mb-2">
+        <div class="col-12">
+            <h6 class="my-1">Layout Mode</h6>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6 d-grid">
+            <input type="radio" class="btn-check" name="layout-mode" checked id="btn-layout-modes-light" (click)="modechangelight($event)">
+            <label class="btn btn-outline-warning shadow-sm bg-white" for="btn-layout-modes-light"><i class="bi bi-sun fs-4 mb-2 d-block"></i>Light
+                Mode</label>
+        </div>
+        <div class="col-6 d-grid">
+            <input type="radio" class="btn-check" name="layout-mode" id="btn-layout-modes-dark" (click)="modechangedark($event)">
+            <label class="btn btn-outline-dark shadow-sm bg-dark text-white" for="btn-layout-modes-dark"><i class="bi bi-moon-stars fs-4 mb-2 d-block"></i>Dark
+                Mode</label>
+        </div>
+    </div>
+
+    <!-- color scheme selection -->
+    <div class="row mb-2">
+        <div class="col-12">
+            <h6 class="my-1">Color scheme</h6>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-auto">
+            <input type="radio" class="btn-check" name="color-scheme" id="btn-color-danger" value="red" data-title="red"
+                (click)="stylechange($event)">
+            <label class="btn btn-outline-danger shadow-sm avatar avatar-50 p-0" for="btn-color-danger">RD</label>
+        </div>
+        <div class="col-auto">
+            <input type="radio" class="btn-check" name="color-scheme" id="btn-color-warning" data-title="yellow" value="1"
+                (click)="stylechange($event)">
+            <label class="btn btn-outline-warning shadow-sm avatar avatar-50 p-0" for="btn-color-warning">YW</label>
+        </div>
+        <div class="col-auto">
+            <input type="radio" class="btn-check" name="color-scheme" id="btn-color-success" data-title="green" (click)="stylechange($event)">
+            <label class="btn btn-outline-success shadow-sm avatar avatar-50 p-0" for="btn-color-success">GR</label>
+        </div>
+        <div class="col-auto">
+            <input type="radio" class="btn-check" name="color-scheme" id="btn-color-primary" data-title="blue"
+                (click)="stylechange($event)">
+            <label class="btn btn-outline-primary shadow-sm avatar avatar-50 p-0" for="btn-color-primary">BL</label>
+        </div>
+        <div class="col-auto">
+            <input type="radio" class="btn-check" name="color-scheme" id="btn-color-pink" data-title="pink" (click)="stylechange($event)">
+            <label class="btn btn-outline-pink shadow-sm avatar avatar-50 p-0" for="btn-color-pink">PL</label>
+        </div>
+    </div>
+
+    <!-- layout modes selection -->
+    <div class="row mb-2">
+        <div class="col-12">
+            <h6 class="my-1">RTL -LTR Layout</h6>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6 d-grid">
+            <input type="radio" class="btn-check" name="layout-mode" checked id="btn-ltr" checked (click)="layoutltr($event)">
+            <label class="btn btn-outline-primary shadow-sm" for="btn-ltr">Left to Right</label>
+        </div>
+        <div class="col-6 d-grid">
+            <input type="radio" class="btn-check" name="layout-mode" id="btn-rtl" (click)="layoutrtl($event)">
+            <label class="btn btn-outline-primary shadow-sm" for="btn-rtl">Right to Left</label>
+        </div>
+    </div>
+</div>

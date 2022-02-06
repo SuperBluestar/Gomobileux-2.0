@@ -1,0 +1,46 @@
+.logo {
+  max-width: 236px;
+}
+.logo-text {
+  font-size: 60px;
+  line-height: 30px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+  span,
+  small,
+  .small {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.logo-small {
+  display: inline-block;
+  
+  img,
+  .img {
+    vertical-align: middle;
+    width: 58px;
+  }
+
+  h6 {
+    font-size: 30px;
+    line-height: 15px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 -5px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+    span,
+    small,
+    .small {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+}

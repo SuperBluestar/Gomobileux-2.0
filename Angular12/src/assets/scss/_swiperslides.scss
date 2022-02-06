@@ -1,0 +1,90 @@
+.swiper-container {
+  z-index: 0;
+  .swiper-pagination-bullet {
+    background-color: $text-color-theme;
+    opacity: 1;
+    &.swiper-pagination-bullet-active {
+      background-color: $bg-color-theme;
+    }
+  }
+}
+.card {
+  .swiper-container {
+    .swiper-pagination-bullet {
+      background-color: rgba($bg-color-theme, 0.2);
+
+      &.swiper-pagination-bullet-active {
+        background-color: $bg-color-theme;
+      }
+    }
+  }
+}
+.swiperhighlight {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 132px;
+      padding: 2px 0 5px 12px;
+    }
+  }
+}
+
+.pagination-intro {
+  .swiper-pagination-bullet {
+    height: 6px;
+    width: 14px;
+    border-radius: 3px;
+    margin: 0 5px 0 0;
+    background-color: $text-color-theme;
+  }
+}
+
+.categoriesswiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 70px;
+      padding: 0;
+      text-align: center;
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 40px;
+      }
+      .categoryname {
+        font-size: 12px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.offerslides,
+.imageswiper {
+  padding-bottom: 30px !important;
+  .swiper-wrapper {
+    .swiper-slide {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+}
+
+.trendingslides {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 200px;
+    }
+  }
+}
+
+.shopslides {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 290px;
+      padding-bottom: 5px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+}

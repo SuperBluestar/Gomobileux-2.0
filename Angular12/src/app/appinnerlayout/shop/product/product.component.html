@@ -1,0 +1,463 @@
+<!-- Header -->
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a routerLink="/shophome" class="link text-color-theme">
+                <i class="bi bi-arrow-left size-20"></i>
+            </a>
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0">Product</h5>
+        </div>
+        <div class="col-auto align-self-center">
+            <a routerLink="/profile" class="link text-color-theme">
+                <i class="bi bi-person-circle size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Header ends -->
+
+<!-- main page content -->
+<div class="main-container container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body pb-0 position-relative">
+                    <div class="position-absolute top-0 end-0 m-3 z-index-9">
+                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle btn-outline-info me-2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="bi bi-share"></i>
+                        </button>
+                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle btn-outline-danger">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="swiper-container imageswiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide text-center mb-0">
+                                <img src="assets/img/apple.png" alt="" class="h-190 mb-2">
+                            </div>
+                            <div class="swiper-slide text-center mb-0">
+                                <img src="assets/img/apple.png" alt="" class="h-190 mb-2">
+                            </div>
+                            <div class="swiper-slide text-center mb-0">
+                                <img src="assets/img/apple.png" alt="" class="h-190 mb-2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination imageswiper-pagination "></div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card-footer justify-content-center text-center">
+                        <p class="mb-1 text-opac">Share product with</p>
+                        <a routerLink="#" class="btn btn-link text-color-theme"><i class="bi bi-twitter"></i></a>
+                        <a routerLink="#" class="btn btn-link text-color-theme"><i class="bi bi-facebook"></i></a>
+                        <a routerLink="#" class="btn btn-link text-color-theme"><i class="bi bi-linkedin"></i></a>
+                        <a routerLink="#" class="btn btn-link text-color-theme"><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="mb-1">
+                <span class="text-opac">Fresh</span>
+                <span class="float-end"><span class="text-opac">5.0 (1445 Reviews)</span> <i class="bi bi-star-fill text-warning"></i></span>
+            </p>
+            <h4 class="text-color-theme mb-3">Red Apple</h4>
+            <div class="row mb-4">
+                <div class="col">
+                    <h5 class="mb-0">$12.00 <s class="text-opac fw-light">$20.00</s></h5>
+                    <p class="text-opac">per 1 kg</p>
+                </div>
+                <div class="col-auto align-self-center">
+                    <!-- button counter increamenter-->
+                    <div class="counter-number">
+                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                            <i class="bi bi-dash size-22"></i>
+                        </button>
+                        <span>2</span>
+                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                            <i class="bi bi-plus size-22"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delivery time -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-light shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center mb-0 avatar avatar-50 page-bg rounded">
+                                <i class="bi bi-clock size-24 text-color-theme"></i>
+                            </figure>
+                        </div>
+                        <div class="col align-self-center">
+                            <h6 class="mb-1">San Jose, USA
+                                <span class="text-color-theme float-end small">Change <i class="bi bi-chevron-right"></i></span>
+                            </h6>
+                            <p><span class="text-opac">Delivery on:</span> <strong>7 Dec 2021</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- description -->
+    <div class="row mb-3">
+        <div class="col">
+            <h5 class="mb-0">Product details</h5>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-12">
+            <p class="text-opac">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                sollicitudin dignissim nisi, eget malesuada ligula ultricies sit amet. Suspendisse
+                efficitur ex eu est placerat mattis.</p>
+            <p class="text-opac">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                sollicitudin dignissim nisi, eget malesuada ligula ultricies sit amet. Suspendisse
+                efficitur ex eu est placerat mattis. </p>
+        </div>
+    </div>
+
+    <!-- description of vitamins -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-4">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="65" [radius]="17"
+                                [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#52E5A5'"
+                                [innerStrokeColor]="'rgba(45, 255, 163, 0.3)'" [animation]="true" [animationDuration]="300"
+                                [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+
+                            <div class="d-inline-block vm">
+                                <p class="lh-16"><small class="text-opac">Carbs</small><br>75g</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="40" [radius]="17"
+                                [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#FFC400'"
+                                [innerStrokeColor]="'rgba(255, 196, 0, 0.3)'" [animation]="true" [animationDuration]="300"
+                                [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+                            <div class="d-inline-block vm">
+                                <p class="lh-16"><small class="text-opac">Fat</small><br>45g</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="65" [radius]="17"
+                                [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#f44336 '"
+                                [innerStrokeColor]="'rgba(244, 67, 54, 0.3)'" [animation]="true" [animationDuration]="300"
+                                [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+                            <div class="d-inline-block vm">
+                                <p class="lh-16"><small class="text-opac">Protein</small><br>105g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <p class="text-opac">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        sollicitudin dignissim nisi, eget malesuada ligula ultricies sit amet. Suspendisse
+                        efficitur ex eu est placerat mattis.</p>
+                </div>
+            </div>
+            <p class="text-opac small">** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                sollicitudin dignissim nisi, eget malesuada ligula ultricies sit amet. Suspendisse
+                efficitur ex eu est placerat mattis.</p>
+        </div>
+    </div>
+
+    <!-- Available at shops -->
+    <div class="row mb-3">
+        <div class="col">
+            <h5 class="mb-0">Avaialble in Shop</h5>
+        </div>
+    </div>
+
+    <!-- shop slides -->
+    <div class="row">
+        <div class="col-12 px-0">
+            <swiper class="shopslides mb-4" [slidesPerView]="1.2" [spaceBetween]="0" [pagination]="false">
+                <!-- Slides -->
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-60 page-bg rounded">
+                                        <i class="bi bi-shop size-24 text-color-theme"></i>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <a routerLink="#" class="text-normal text-color-theme">
+                                        <h6 class="mb-1">Atlanicaa Food <i class="bi bi-arrow-up-right-circle text-color-theme float-end"></i></h6>
+                                    </a>
+                                    <p class="mb-1">B-49, Feirra Street</p>
+                                    <p class="small d-block">
+                                        <span class="text-opac">10:00am - 11:00pm</span>
+                                        <span class="float-end"><span class="text-opac">2.5km</span> <i class="bi bi-geo-alt"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-60 page-bg rounded">
+                                        <i class="bi bi-shop size-24 text-color-theme"></i>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <a routerLink="#" class="text-normal text-color-theme">
+                                        <h6 class="mb-1">Milbar Food <i class="bi bi-arrow-up-right-circle text-color-theme float-end"></i></h6>
+                                    </a>
+                                    <p class="mb-1">A-39, Axaar Street</p>
+                                    <p class="small d-block">
+                                        <span class="text-opac">10:00am - 11:00pm</span>
+                                        <span class="float-end"><span class="text-opac">2.5km</span> <i class="bi bi-geo-alt"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-60 page-bg rounded">
+                                        <i class="bi bi-shop size-24 text-color-theme"></i>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <a routerLinkerLink="#" class="text-normal text-color-theme">
+                                        <h6 class="mb-1">Amazon Fresh<i class="bi bi-arrow-up-right-circle text-color-theme float-end"></i></h6>
+                                    </a>
+                                    <p class="mb-1">C-49, Lothal at</p>
+                                    <p class="small d-block">
+                                        <span class="text-opac">10:00am - 11:00pm</span>
+                                        <span class="float-end"><span class="text-opac">2.5km</span> <i class="bi bi-geo-alt"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </swiper>
+        </div>
+    </div>
+
+    <!-- offerslides -->
+    <swiper class="offerslides mb-3" [slidesPerView]="1" [spaceBetween]="15" [pagination]="true" [breakpoints]="{'640': { slidesPerView: 1, spaceBetween: 10 },
+    '768': { slidesPerView: 2, spaceBetween: 20 }, '1024': { slidesPerView: 3, spaceBetween: 30 } }">
+        <!-- Slides -->
+        <ng-template swiperSlide>
+            <div class="card shadow-sm card-theme">
+                <div class="card-body py-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/Banner.png" alt="" class="mw-100">
+                        </div>
+                        <div class="col text-start align-self-center ps-0">
+                            <h6 class="fw-normal mb-0">Season Discount</h6>
+                            <h2>50% OFF</h2>
+                            <p>Use Code<br><strong>"SEASON01"</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="card shadow-sm card-theme">
+                <div class="card-body py-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/Banner3.png" alt="" class="mw-100">
+                        </div>
+                        <div class="col text-start align-self-center ps-0">
+                            <h6 class="fw-normal mb-0">Special Discount</h6>
+                            <h2>65% OFF</h2>
+                            <p>Use Code<br><strong>"NEW004"</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="card shadow-sm card-theme">
+                <div class="card-body py-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/Banner2.png" alt="" class="mw-100">
+                        </div>
+                        <div class="col text-start align-self-center ps-0">
+                            <h6 class="fw-normal mb-0">Protein Discount</h6>
+                            <h2>20% OFF</h2>
+                            <p>Use Code<br><strong>"REAL20BK"</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+    </swiper>
+
+    <!-- Related Items -->
+    <div class="row mb-3">
+        <div class="col">
+            <h5 class="mb-0">Related Items</h5>
+        </div>
+    </div>
+    <!-- trending -->
+    <swiper class="trendingslides" [slidesPerView]="1.6" [spaceBetween]="25" [pagination]="false">
+        <!-- Slides -->
+        <ng-template swiperSlide>
+            <div class="card shadow-sm product mb-4">
+                <figure class="text-center mb-0 bg-light-warning">
+                    <img src="assets/img/product1.png" alt="">
+                </figure>
+                <div class="card-body">
+                    <p class="mb-1">
+                        <small class="text-opac">Fresh</small>
+                        <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                    </p>
+                    <a routerLink="/product" class="text-normal">
+                        <h6 class="text-color-theme">Red Apple</h6>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- button counter increamenter-->
+                            <div class="counter-number">
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-dash size-22"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-plus size-22"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card shadow-sm product mb-4">
+                <figure class="text-center mb-0 bg-light-warning">
+                    <img src="assets/img/product2.png" alt="">
+                </figure>
+                <div class="card-body">
+                    <p class="mb-1">
+                        <small class="text-opac">Protein</small>
+                        <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                    </p>
+                    <a routerLink="/product" class="text-normal">
+                        <h6 class="text-color-theme">Best Banana</h6>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0">$8.00<br><small class="text-opac">per 12 pcs</small></p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- button counter increamenter-->
+                            <div class="counter-number">
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-dash size-22"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-plus size-22"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card shadow-sm product mb-4">
+                <figure class="text-center mb-0 bg-light-warning">
+                    <img src="assets/img/product3.png" alt="">
+                </figure>
+                <div class="card-body">
+                    <p class="mb-1">
+                        <small class="text-opac">Fresh</small>
+                        <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                    </p>
+                    <a routerLink="/product" class="text-normal">
+                        <h6 class="text-color-theme">Watermelon</h6>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0">$11.00<br><small class="text-opac">per 1 kg</small></p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- button counter increamenter-->
+                            <div class="counter-number">
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-dash size-22"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-plus size-22"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="card shadow-sm product mb-4">
+                <figure class="text-center mb-0 bg-light-warning">
+                    <img src="assets/img/product4.png" alt="">
+                </figure>
+                <div class="card-body">
+                    <p class="mb-1">
+                        <small class="text-opac">Fresh</small>
+                        <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                    </p>
+                    <a routerLink="/product" class="text-normal">
+                        <h6 class="text-color-theme">Yellow Lemon</h6>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0">$8.00<br><small class="text-opac">per 1 kg</small></p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- button counter increamenter-->
+                            <div class="counter-number">
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-dash size-22"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                    <i class="bi bi-plus size-22"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+
+</div>
+<!-- main page content ends -->

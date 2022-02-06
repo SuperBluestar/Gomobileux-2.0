@@ -1,0 +1,127 @@
+/* chat list */
+.chat-list {
+    margin: 0px auto;
+    font-size: 15px;
+
+    .figure, figure, iframe, video{
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+        max-width: 100%;
+    }
+    .left-chat {
+        margin-bottom: 15px;
+
+        .chat-block {
+            padding: 15px;
+            border-radius: 10px 10px 10px 0px;
+            margin-right: 3px;
+            position: relative;
+            width: auto;
+            display: inline-block;
+            background-color: lighten($bg-color-theme, 10%);
+            color: $text-color-theme;
+            margin-bottom: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            max-width: 90%;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: -16px;
+                height: 8px;
+                width: 8px;
+                border-radius: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 10px;
+                z-index: 1;
+                border-top-color: lighten($bg-color-theme, 10%);
+                border-left-color: lighten($bg-color-theme, 10%);
+            }
+           
+        }
+        .time{
+            padding-left: 15px;
+        }
+    }
+
+    .right-chat {
+        margin-bottom: 15px;
+        text-align: right;
+
+        .chat-block {
+            text-align: left;
+            background: #ede9e9;
+            padding: 15px;
+            border-radius: 10px 10px 0px 10px;
+            margin-left: 3px;
+            position: relative;
+            color: #999999;
+            background-color: $text-color-theme;
+            width: auto;
+            display: inline-block;
+            margin-bottom: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            max-width: 90%;
+
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0px;
+                bottom: -16px;
+                height: 8px;
+                width: 8px;
+                border-radius: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 10px;
+                border-right-color: $text-color-theme;
+                border-top-color: $text-color-theme;
+                z-index: 1;
+            }
+
+        }
+        .time{
+            padding-right: 15px;
+        }
+    }
+
+}
+.chat-post{
+    background-color: rgba($card-color, 0.75);
+    @extend .blur;
+    color: $text-color-theme-primary;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    padding: 15px 15px;    
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    -webkt-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    @extend .transition-05;
+
+    input{
+        border: rgba(0, 0, 0, 0.1) solid 1px !important;
+    }
+}
+
+
+.list-group{
+    border-radius: 10px;
+    &.bg-none{
+        background-color: transparent;
+
+        .list-group-item{
+            background-color: rgba($card-color, 0.55);
+            @extend .blur;
+        }
+    }
+}

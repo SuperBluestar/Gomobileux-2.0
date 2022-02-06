@@ -1,0 +1,220 @@
+$color-secondary: #eef0f8;
+$text-secondary: #000000;
+$card-color:#ffffff;
+$header-color: #ffffff;
+$footer-color: #ffffff;
+
+$color-success: #65e5a1;
+$color-danger: #fb737c;
+$color-warning: #ffc374;
+$color-purple: #7521f3;
+$color-blue: #7297f8;
+
+
+:root {
+  --f7-grid-gap: 30px;
+  --f7-fab-extended-size: 40px;
+  --f7-button-large-font-size: 15px;
+  --f7-button-large-height: 58px;
+  --f7-list-font-size: 16px;
+  --f7-input-font-size: 15px;
+  --f7-messagebar-height: 44px;
+  --f7-message-bubble-font-size: 15px;
+  --f7-card-header-border-color: darken($color-secondary, 5%);
+  --f7-card-footer-border-color: darken($color-secondary, 5%);
+  --f7-list-item-border-color: darken($color-secondary, 5%);
+  --f7-list-chevron-icon-color: darken($color-secondary, 8%);
+  --f7-list-item-padding-vertical: 10px;
+  --f7-elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.05),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+  --f7-elevation-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.08),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.color-theme-pink {
+  --f7-theme-color: #FF1C52;
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #ff7db1;
+  --f7-theme-color-2: #8900aa;
+  --page-bg-color: #F8EBEE;
+  --page-bg-path1: url("../img/bgshapes.png");
+  --page-bg-path2: url("../img/bgshapes2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+
+.color-theme-red {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #e91e63;
+  --f7-theme-color-2: #ab1826;
+  --page-bg-color: #F8EBEE;
+  --page-bg-path1: url("../img/bgshapes.png");
+  --page-bg-path2: url("../img/bgshapes2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+
+.color-theme-green {  
+  --f7-theme-color: #27b764;
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #cddc39;
+  --f7-theme-color-2: #00796d;
+  --page-bg-color: #ebf7f1;
+  --page-bg-path1: url("../img/bgshapes-green-1.png");
+  --page-bg-path2: url("../img/bgshapes-green-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-blue {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #39dcbe;
+  --f7-theme-color-2: #3f51b5;
+  --page-bg-color: #ebf4f8;
+  --page-bg-path1: url("../img/bgshapes-blue-1.png");
+  --page-bg-path2: url("../img/bgshapes-blue-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-yellow {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #cddc39;
+  --f7-theme-color-2: #ff5722;
+  --page-bg-color: #f8f5eb;
+  --page-bg-path1: url("../img/bgshapes-yellow-1.png");
+  --page-bg-path2: url("../img/bgshapes-yellow-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-orange {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #86d9ff;
+  --f7-theme-color-2: #e21700;
+  --page-bg-color: #f8f5eb;
+  --page-bg-path1: url("../img/bgshapes-yellow-1.png");
+  --page-bg-path2: url("../img/bgshapes-yellow-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-purple {  
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #e91e63;
+  --f7-theme-color-2: #511fab;
+  --page-bg-color: #f2ebf8;
+  --page-bg-path1: url("../img/bgshapes.png");
+  --page-bg-path2: url("../img/bgshapes2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-deeppurple {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #d11ee9;
+  --f7-theme-color-2: #01017b;
+  --page-bg-color: #f2ebf8;
+  --page-bg-path1: url("../img/bgshapes.png");
+  --page-bg-path2: url("../img/bgshapes2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-lightblue {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #39dcbe;
+  --f7-theme-color-2: #3f51b5;
+  --page-bg-color: #ebf6f8;
+  --page-bg-path1: url("../img/bgshapes-blue-1.png");
+  --page-bg-path2: url("../img/bgshapes-blue-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-teal {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #6ddade;
+  --f7-theme-color-2: #005296;
+  --page-bg-color: #ebf8f3;
+  --page-bg-path1: url("../img/bgshapes-green-1.png");
+  --page-bg-path2: url("../img/bgshapes-green-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-lime {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #ffc107;
+  --f7-theme-color-2: #009688;
+  --page-bg-color: #eff1dd;
+  --page-bg-path1: url("../img/bgshapes-green-1.png");
+  --page-bg-path2: url("../img/bgshapes-green-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-deeporange {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #ffc107;
+  --f7-theme-color-2: #8e0707;
+  --page-bg-color: #f8f5eb;
+  --page-bg-path1: url("../img/bgshapes.png");
+  --page-bg-path2: url("../img/bgshapes2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-gray {
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #bfd3da;
+  --f7-theme-color-2: #3a6882;
+  --page-bg-color: #efefef;
+  --page-bg-path1: url("../img/bgshapes-blue-1.png");
+  --page-bg-path2: url("../img/bgshapes-blue-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}
+.color-theme-black {
+  --f7-theme-color: #222222;
+  --f7-theme-dark-text-color: #ffffff;
+  --f7-theme-color-0: #415a65;
+  --f7-theme-color-2: #000000;
+  --page-bg-color: #efefef;
+  --page-bg-path1: url("../img/bgshapes-blue-1.png");
+  --page-bg-path2: url("../img/bgshapes-blue-2.png");
+
+  .dark-bg {
+    --f7-theme-text-color: #ffffff;
+    --f7-label-text-color: #000000;
+  }
+}

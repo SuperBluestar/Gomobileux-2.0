@@ -1,0 +1,622 @@
+<div class="page page-stats" data-name="stats">
+    <div class="navbar ">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="left  no-margin-right">
+                <a href="#" class="link icon-only panel-open " data-panel="left">
+                    <i class="icon f7-icons size-22">bars</i>
+                </a>
+            </div>
+            <div class="title text-align-center">
+                <div class="logo-small">
+                    <img src="img/logo.png" alt="" class="img" />
+                    <h6>GO<br /><small>MobileUX</small></h6>
+                </div>
+            </div>
+            <div class="right text-align-center">
+                <a href="/profile/" class="link ">
+                    <i class="icon f7-icons size-22">person_circle</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- main page content -->
+    <div class="page-content has-footer">
+        <!-- search -->
+        <div class="block">
+            <div class="row margin-bottom">
+                <div class="col align-self-center">
+                    <h5 class="no-margin-bottom">This Month</h5>
+                    <input type="text" id="daterange" class="d-none calendar-daterange" value="7/16/2021 - 7/23/2021">
+                </div>
+                <div class="col-auto">
+                    <button class="button button-fill button-large padding elevation-3 daterange-btn">
+                        <i class="icons f7-icons size-22">calendar</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart area -->
+        <div class="block">
+            <div class="row">
+                <div class="col-100">
+                    <div class="card elevation-2 margin-bottom">
+                        <div class="card-content card-content-padding">
+                            <canvas id="areachart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- expense  saving -->
+        <div class="block">
+            <div class="row">
+                <div class="col">
+                    <div class="card elevation-2 product margin-bottom">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-50 rounded bg-color-red text-color-white">
+                                        <i class="icon f7-icons">creditcard</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding-left align-self-center">
+                                    <span class="small text-opac no-margin-bottom">Expense</span>
+                                    <p class=" ">$ 521</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card elevation-2 product margin-bottom">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-50 rounded bg-color-green text-color-white">
+                                        <i class="icon f7-icons">gift</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding-left align-self-center">
+                                    <span class="small text-opac no-margin-bottom">Saving</span>
+                                    <p class=" ">$ 62</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- purchase fatg -->
+        <div class="block">
+            <div class="row">
+                <div class="col-100">
+                    <div class="card card-theme shadow-sm margin-bottom">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col">
+                                    <p class=" ">Purchased</p>
+                                    <h2>364 <small>kcal</small></h2>
+                                    <div class="progressbar color-green h-6" data-progress="55">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="col text-algin-right">
+                                    <p class=" ">Fatg</p>
+                                    <h2>42.2</h2>
+                                    <div class="progressbar color-yellow h-6" data-progress="45">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakfast block -->
+
+        <div class="block">
+            <div class="row">
+                <div class="col-100 ">
+                    <div class="card elevation-2 margin-bottom">
+                        <div class="card-header z-index-5">
+                            <div class="row">
+                                <div class="col align-self-center">
+                                    <h5 class="no-margin-bottom">Breakfast<br /><small class="text-success">1265 kcal</small></h5>
+                                </div>
+                                <div class="col-auto no-padding align-self-center">
+                                    <button class="button button-link text-color-theme actions-open" type="button"
+                                        data-actions=".myselection"><i class="icon f7-icons">plus</i></button>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="menu-item menu-item-dropdown z-index-5">
+                                        <div class="menu-item-content text-color-theme"><i class="icon f7-icons">line_horizontal_3_decrease</i></div>
+                                        <div class="menu-dropdown menu-dropdown-right">
+                                            <div class="menu-dropdown-content">
+                                                <a href="#" class="menu-dropdown-link menu-close">Breakfast</a>
+                                                <a href="#" class="menu-dropdown-link menu-close">Lunch</a>
+                                                <a href="#" class="menu-dropdown-link menu-close">Dinner</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-content card-content-padding product">
+                            <div class="row margin-bottom-half">
+                                <div class="col-auto">
+                                    <figure class="text-align-center no-margin-bottom avatar avatar-40 page-bg rounded p-1">
+                                        <img src="img/apple-small.png" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>Apple<br /><small class="text-opac">Medium Size 168 kcal</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <!-- button counter increamenter-->
+                                    <div class="counter-number">
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">minus</i>
+                                        </button>
+                                        <span>1</span>
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">plus</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-half">
+                                <div class="col-auto">
+                                    <figure class="text-align-center no-margin-bottom avatar avatar-40 page-bg rounded p-1">
+                                        <img src="img/banana-small.png" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>Banana<br /><small class="text-opac">Small Size 56 kcal</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <!-- button counter increamenter-->
+                                    <div class="counter-number">
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">minus</i>
+                                        </button>
+                                        <span>1</span>
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">plus</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-half">
+                                <div class="col-auto">
+                                    <figure class="text-align-center no-margin-bottom avatar avatar-40 page-bg rounded p-1">
+                                        <img src="img/product3.png" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>Watermelon<br /><small class="text-opac">Small Size 256 kcal</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <!-- button counter increamenter-->
+                                    <div class="counter-number">
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">minus</i>
+                                        </button>
+                                        <span>1</span>
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">plus</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-auto">
+                                    <figure class="text-align-center no-margin-bottom avatar avatar-40 page-bg rounded p-1">
+                                        <img src="img/product4.png" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>Lemon<br /><small class="text-opac">Large Size 316 kcal</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <!-- button counter increamenter-->
+                                    <div class="counter-number">
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">minus</i>
+                                        </button>
+                                        <span>1</span>
+                                        <button class="btn btn-sm avatar avatar-30 no-padding rounded-circle">
+                                            <i class="icons f7-icons">plus</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div id="progressCircle1" class="small-circle display-inline-block margin-right-half"></div>
+                                    <div class="display-inline-block">
+                                        <p class="lh-16"><small class="text-opac">Carbs</small><br />75g</p>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div id="progressCircle2" class="small-circle display-inline-block margin-right-half"></div>
+                                    <div class="display-inline-block">
+                                        <p class="lh-16"><small class="text-opac">Fat</small><br />45g</p>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div id="progressCircle3" class="small-circle display-inline-block margin-right-half"></div>
+                                    <div class="display-inline-block">
+                                        <p class="lh-16"><small class="text-opac">Protein</small><br />105g</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- And somewhere in DOM -->
+        <div class="actions-modal myselection">
+            <div class="block">
+                <div class="card elevation-2 margin-bottom-half">
+                    <div class="card-content card-content-padding">
+                        <div class="list">
+                            <ul class="no-background">
+                                <li>
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="demo-checkbox" value="Books" checked="Apple" />
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner">
+                                            <div class="item-title">Apple</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="demo-checkbox" value="Banana" />
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner">
+                                            <div class="item-title">Banana</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="demo-checkbox" value="Mengos" />
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner">
+                                            <div class="item-title">Mengos</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="demo-checkbox" value="Watermelon" />
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner">
+                                            <div class="item-title">Watermelon</div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- vitamins counts -->
+        <div class="block">
+            <div class="row">
+                <div class="col-100">
+                    <div class="card elevation-2 product margin-bottom">
+                        <div class="card-content card-content-padding">
+                            <div class="row margin-bottom-half">
+                                <div class="col-auto">
+                                    <figure class="text-align-center avatar-90 avatar">
+                                        <img src="img/product2.png" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col no-padding-left">
+                                    <p class=" margin-bottom-half">
+                                        <small class="text-opac">Protein</small>
+                                        <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h6 class="text-color-theme margin-bottom-half">Banana</h6>
+                                            <p class="no-margin-bottom">$12.00 <small class="text-opac">per 1 kg</small></p>
+                                        </div>
+                                        <div class="col-auto align-self-center">
+                                            <button class="button avatar avatar-40 no-padding rounded-circle shadow button-gradient">
+                                                <i class="f7-icons icon">plus</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-half">
+                                <div class="col">
+                                    <p class="text-opac">Carbs</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p>75g</p>
+                                </div>
+                                <div class="col-100 margin-top-half">
+                                    <div class="progressbar color-green h-6" data-progress="35">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-half">
+                                <div class="col">
+                                    <p class="text-opac">Fat</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p>45g</p>
+                                </div>
+                                <div class="col-100 margin-top-half">
+                                    <div class="progressbar color-red h-6" data-progress="55">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-opac">Protein</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p>105g</p>
+                                </div>
+                                <div class="col-100 margin-top-half">
+                                    <div class="progressbar color-yellow h-6" data-progress="75">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- summary blocks -->
+        <div class="block">
+            <div class="row">
+                <div class="col-50 medium-25 large-25">
+                    <div class="card elevation-2 margin-bottom bg-blue-light">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-color-blue text-color-white rounded-circle">
+                                        <i class="icon f7-icons size-20">clock</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding">
+                                    <h6 class="no-margin-bottom">+155</h6>
+                                    <p class="text-muted small">Hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50 medium-25 large-25">
+                    <div class="card elevation-2 margin-bottom bg-yellow-light">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-color-yellow text-color-white rounded-circle">
+                                        <i class="icon f7-icons size-20">speedometer</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding">
+                                    <h6 class="no-margin-bottom">+365</h6>
+                                    <p class="text-muted small">Processing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50 medium-25 large-25">
+                    <div class="card elevation-2 margin-bottom bg-green-light">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-color-green text-color-white rounded-circle">
+                                        <i class="icon f7-icons size-20">folder</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding">
+                                    <h6 class="no-margin-bottom">+658</h6>
+                                    <p class="text-muted small">Pojects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50 medium-25 large-25">
+                    <div class="card elevation-2 margin-bottom bg-red-light">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-color-red text-color-white rounded-circle">
+                                        <i class="icon f7-icons size-20">chart_bar</i>
+                                    </div>
+                                </div>
+                                <div class="col no-padding">
+                                    <h6 class="no-margin-bottom">+248</h6>
+                                    <p class="text-muted small">Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--News and announcements -->
+        <div class="block">
+            <div class="row margin-bottom-half">
+                <div class="col">
+                    <h5 class="no-margin-bottom">Research says</h5>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="row margin-bottom-half">
+                <div class="col-100 medium-50 large-33">
+                    <div class="card elevation-2 margin-bottom-half">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-100">
+                                    <figure class="text-align-center margin-bottom-half coverimg page-bg rounded h-150">
+                                        <img src="img/news1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <p class="small display-block">
+                                        <span class="text-opac">Trend setter</span>
+                                        <span class="float-end"><span class="text-opac">26 July 2021</span> <i class="bi bi-clock"></i></span>
+                                    </p>
+                                    <a href="#" class="text-normal text-color-theme display-block margin-bottom-half">
+                                        <h6>Best UI UX design with your loving frameworks</h6>
+                                    </a>
+                                    <div class=" ">
+                                        <figure class="text-align-center no-margin-bottom avatar avatar-20 coverimg rounded margin-right-half">
+                                            <img src="img/user2.jpg" alt="" />
+                                        </figure>
+                                        Archana Singh
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-100 medium-50 large-33">
+                    <div class="card elevation-2 margin-bottom-half">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-100">
+                                    <figure class="text-align-center margin-bottom-half coverimg page-bg rounded h-150">
+                                        <img src="img/news2.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <p class="small display-block">
+                                        <span class="text-opac">ReadOut</span>
+                                        <span class="float-end"><span class="text-opac">26 July 2021</span> <i class="bi bi-clock"></i></span>
+                                    </p>
+                                    <a href="#" class="text-normal text-color-theme display-block margin-bottom-half">
+                                        <h6>Make a distance from bad design & accept the change</h6>
+                                    </a>
+                                    <div class=" ">
+                                        <figure class="text-align-center no-margin-bottom avatar avatar-20 coverimg rounded rounded margin-right-half">
+                                            <img src="img/user1.jpg" alt="" />
+                                        </figure>
+                                        John Doe
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-100 medium-50 large-33">
+                    <div class="card elevation-2 margin-bottom-half">
+                        <div class="card-content card-content-padding">
+                            <div class="row">
+                                <div class="col-100">
+                                    <figure class="text-align-center margin-bottom-half coverimg page-bg rounded h-150">
+                                        <img src="img/news3.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <p class="small display-block">
+                                        <span class="text-opac">FoodTechy</span>
+                                        <span class="float-end"><span class="text-opac">26 July 2021</span> <i class="bi bi-clock"></i></span>
+                                    </p>
+                                    <a href="#" class="text-normal text-color-theme display-block margin-bottom-half">
+                                        <h6>Never regret of buying and trying new things</h6>
+                                    </a>
+                                    <div class=" ">
+                                        <figure class="text-align-center no-margin-bottom avatar avatar-20 coverimg rounded margin-right-half">
+                                            <img src="img/user3.jpg" alt="" />
+                                        </figure>
+                                        Laxmisho Johnson
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer static -->
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/home/">
+                        <span>
+                            <i class="icon f7-icons">house</i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="/stats/">
+                        <span>
+                            <i class="icon f7-icons">chart_bar</i>
+                            <span class="nav-text">Stats</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="center-item">
+                    <a href="/cart/">
+                        <span>
+                            <i class="icon f7-icons">cart</i>
+                            <span class="nav-text">card-content</span>
+                            <span class="countercart">3</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/style/">
+                        <span>
+                            <i class="icon f7-icons">circle_grid_hex</i>
+                            <span class="nav-text">Style</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings/">
+                        <span>
+                            <i class="icon f7-icons">gear</i>
+                            <span class="nav-text">Settings</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</div>

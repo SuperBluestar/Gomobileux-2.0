@@ -1,0 +1,149 @@
+html.menu-open {
+  overflow: hidden;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  overflow-y: auto;
+  min-height: 100%;
+  background: $page-bg-path1 repeat-x center top,
+  $page-bg-path2 repeat-x center bottom;
+  background-attachment: fixed, fixed;
+  background-color: $page-bg-color;
+}
+.page-bg {
+  background-color: $page-bg-color;
+}
+.dark-bg {
+  color: $text-color-theme;
+  background: $bg-color-theme, url("../img/background1@2x.png");
+  background: url("../img/background1@2x.png"),
+    -moz-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+          100%);
+  background: url("../img/background1@2x.png"),
+    -webkit-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+          100%);
+  background: url("../img/background1@2x.png"),
+    linear-gradient(
+      to bottom,
+      $color-gradient-1 0%,
+      $color-gradient-2 50%,
+      $color-gradient-3 100%
+    );
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat:repeat-x;
+
+  &.bg2 {
+    background: $bg-color-theme, url("../img/background2@2x.png");
+    background: url("../img/background2@2x.png"),
+      -moz-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+            100%);
+    background: url("../img/background2@2x.png"),
+      -webkit-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+            100%);
+    background: url("../img/background2@2x.png"),
+      linear-gradient(
+        to bottom,
+        $color-gradient-1 0%,
+        $color-gradient-2 50%,
+        $color-gradient-3 100%
+      );
+    background-attachment: fixed;
+    background-size: auto 100% ;
+    background-position: bottom center;
+    background-repeat:repeat-x
+  }
+  &.bg3 {
+    background: $bg-color-theme, url("../img/background3@2x.png");
+    background: url("../img/background3@2x.png"),
+      -moz-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+            100%);
+    background: url("../img/background3@2x.png"),
+      -webkit-linear-gradient(top, $color-gradient-1 0%, $color-gradient-2 50%, $color-gradient-3
+            100%);
+    background: url("../img/background3@2x.png"),
+      linear-gradient(
+        to bottom,
+        $color-gradient-1 0%,
+        $color-gradient-2 50%,
+        $color-gradient-3 100%
+      );
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat:repeat-x
+  }
+  a {
+    color: $text-color-theme;
+  }
+  .form-control {
+    color: #000000;
+    & + label {
+      color: #999999;
+      opacity: 1;
+    }
+  }
+}
+.bg-warning-light{
+    background-color: lighten($yellow, 46%)
+}
+.main-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.orange-slice {
+  float: right;
+  margin-right: -150px;
+}
+.product {
+  figure {
+    border-radius: 10px;
+    background-color: $page-bg-color;
+    z-index: 1;
+    &.bg-light-yellow {
+      background-color: rgba($yellow, 0.05);
+    }
+  }
+  p {
+    line-height: 1.2rem;
+  }
+}
+.small-circle {
+  height: 28px;
+  width: 28px;
+  position: relative;
+  .progressbar-text {
+    font-size: 12px !important;
+  }
+}
+
+.tag{
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 10px;
+  line-height: 20px;
+  background-color: rgba($page-bg-color, 0.25);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 640px) {
+  .dark-bg {
+    // background: $color-primary url("../img/backgorund1.png") no-repeat top left;
+    background-size: 100% auto;
+  }
+}

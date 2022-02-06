@@ -1,0 +1,149 @@
+<div class="main-container container top-20">
+    <!-- wizard links -->
+    <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+        <div class="col">
+            <a routerLink="/cart" class="wizard-link filled" routerLinkActive='active'>
+                <i class="bi bi-bag shadow-sm"></i>
+                <span class="wizard-text">Products</span>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="/address" class="wizard-link filled" routerLinkActive='active'>
+                <i class="bi bi-geo-alt shadow-sm"></i>
+                <span class="wizard-text">Address</span>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="/payment" class="wizard-link" routerLinkActive='active'>
+                <i class="bi bi-credit-card shadow-sm"></i>
+                <span class="wizard-text">Payment</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Coupon code -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Apply Coupon Code</h5>
+        </div>
+        <div class="col-auto pe-0">
+            <a routerLink="/shophome" class="link text-color-theme">Offers <i class="bi bi-chevron-right"></i></a>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control is-valid" id="couponcode" placeholder="Coupon Code" value="SEASON01">
+                <label for="couponcode">Coupon Code</label>
+                <button type="button" class="btn btn-link text-success tooltip-btn valid-tooltip" data-bs-toggle="tooltip"
+                    data-bs-placement="left" title="" data-bs-original-title="Email is valid">
+                    <i class="bi bi-check-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Proccess -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Payment Modes</h5>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a  class="card shadow-sm mb-3 product text-normal">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                <img src="assets/img/maestro.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col align-self-center">
+                            <p>Maestro card<br><small class="text-opac">**** **** **** 5689</small></p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <i class="bi bi-chevron-right text-color-theme"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a  class="card shadow-sm mb-3 product text-normal">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                <img src="assets/img/visa.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col align-self-center">
+                            <p>Maestro card<br><small class="text-opac">Add your card</small></p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <i class="bi bi-chevron-right text-color-theme"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a  class="card shadow-sm mb-3 product text-normal">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                <img src="assets/img/americanexp.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="col align-self-center">
+                            <p>Maestro card<br><small class="text-opac">Apply for card</small></p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <i class="bi bi-chevron-right text-color-theme"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- pricing -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">Pricing</h5>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <p>Shipping Cost</p>
+        </div>
+        <div class="col-auto">$ 10.00</div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <p>Subtotal</p>
+        </div>
+        <div class="col-auto">$ 32.00</div>
+    </div>
+
+    <div class="row fw-bold mb-4">
+        <div class="mb-3 col-12">
+            <div class="dashed-line"></div>
+        </div>
+        <div class="col">
+            <p>Total</p>
+        </div>
+        <div class="col-auto">$ 42.00</div>
+    </div>
+
+    <!-- Button -->
+    <div class="row mb-3">
+        <div class="col align-self-center d-grid">
+            <a routerLink="/shophome" class="btn btn-default btn-lg shadow-sm">Proceed</a>
+        </div>
+    </div>
+
+</div>

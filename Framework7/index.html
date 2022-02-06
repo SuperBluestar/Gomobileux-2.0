@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="color-theme-pink">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>GoMobileUX V2.0 - Mobile HTML template</title>
+
+  <!-- favicon icons -->
+  <link rel="apple-touch-icon" href="img/favicon180.png">
+  <link rel="icon" href="img/favicon32.png">
+
+  <!-- pwa -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- stylesheet framwork -->
+  <link rel="stylesheet" href="vendor/framework7-6.0.21/css/framework7-bundle.min.css">
+
+  <!-- noUISlider js range picker css -->
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+  <!-- stylesheet framwork7 components  -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- stylesheet template custom  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="panel panel-left panel-cover  panel-init">
+      <div class="page">
+        <div class="page-content">
+
+          <div class="block  margin-top margin-bottom">
+            <div class="row">
+              <div class="col-auto">
+                <figure class="avatar avatar-60 rounded">
+                  <img src="img/user2.jpg" alt="">
+                </figure>
+              </div>
+              <div class="col align-self-center no-padding-left">
+                <h6 class="no-margin-bottom">Selvy Smith</h6>
+                <p class="text-opac">Australia, UK</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="list links-list accordion-list">
+            <ul>
+              <li>
+                <a href="/stats/" class="panel-close active"><i class="f7-icons size-18">house</i> Dashboard</a>
+              </li>
+              <li class="accordion-item">
+                <a class="item-link item-content"><i class="f7-icons size-18">cart</i> Shop</a>
+                <div class="accordion-item-content">
+                  <div class="list links-list accordion-list">
+                    <ul>
+                      <li>
+                        <a href="/home/" class="panel-close active"><i class="f7-icons size-18">cube</i> Shop Home</a>
+                      </li>
+                      <li>
+                        <a href="/product/" class="panel-close"><i class="f7-icons size-18">cube_box</i> Product</a>
+                      </li>
+                      <li>
+                        <a href="/cart/" class="panel-close"><i class="f7-icons size-18">cart_badge_plush</i> Cart</a>
+                      </li>
+                      <li>
+                        <a href="/payment/" class="panel-close"><i class="f7-icons size-18">creditcard</i> Payment</a>
+                      </li>
+                      <li>
+                        <a href="/myorders/" class="panel-close"><i class="f7-icons size-18">doc_text</i> My Orders</a>
+                      </li>
+                      <li>
+                        <a href="/invoice/" class="panel-close"><i class="f7-icons size-18">doc</i> Invoice</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="/chat/" class="panel-close"><i class="f7-icons size-18">bubble_left_bubble_right</i>
+                  Messages</a>
+              </li>
+              <li>
+                <a href="/notificationlist/" class="panel-close"><i class="f7-icons size-18">bell</i> Notifications</a>
+              </li>
+              <li>
+                <a href="/settings/" class="panel-close"><i class="f7-icons size-18">gear</i> Settings</a>
+              </li>
+              <li>
+                <a href="/style/" class="panel-close"><i class="f7-icons size-18">circle_grid_hex</i> Color
+                  Scheme</a>
+              </li>
+              <li>
+                <a href="/pages/" class="panel-close"><i class="f7-icons size-18">doc_on_doc</i> All Pages</a>
+              </li>
+              <li>
+                <a href="/components/" class="panel-close"><i class="f7-icons size-18">layers_alt</i> F7 Componets</a>
+              </li>
+              <li>
+                <a href="/login/" class="panel-close"><i class="f7-icons size-18">layers_alt</i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-right panel-reveal panel-resizable panel-init">
+      <div class="view view-init view-right" data-name="right" data-url="/">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner sliding">
+              <div class="title">Right Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="panel-close">close
+                  me</a>. You can put here anything, even another isolated view.</p>
+            </div>
+            <div class="block-title">Panel Navigation</div>
+            <div class="list links-list">
+              <ul>
+                <li><a href="/panel-right-1/">Right panel page 1</a></li>
+                <li><a href="/panel-right-2/">Right panel page 2</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="768" data-url="/">
+      <!-- loader section -->
+      <div class="block loader-wrap display-none">
+        <div class="row h-100">
+          <div class="col-100 mx-auto text-align-center align-self-center">
+            <div class="loader-cube-wrap mx-auto">
+              <div class="loader-cube1 loader-cube"></div>
+              <div class="loader-cube2 loader-cube"></div>
+              <div class="loader-cube4 loader-cube"></div>
+              <div class="loader-cube3 loader-cube"></div>
+            </div>
+            <p>Great things ahead!<br /><strong>Please wait...</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- loader section ends -->
+    </div>
+  </div>
+  <!-- framework 7  js -->
+  <script src="vendor/framework7-6.0.21/js/framework7-bundle.min.js"></script>
+
+  <!-- PWA app service registration and works -->
+  <script src="js/pwa-services.js"></script>
+
+  <!-- Chart js -->
+  <script src="vendor/chart-js-3.3.1/chart.min.js"></script>
+
+  <!-- progress js -->
+  <script src="vendor/progressbar-js/progressbar.min.js"></script>
+
+  <!-- noUISlider js range-->
+  <script src="vendor/nouislider/nouislider.min.js"></script>
+
+  <!-- Page routing -->
+  <script src="js/routes.js"></script>
+
+  <!-- Store js -->
+  <script src="js/store.js"></script>
+
+  <!-- Cutom apps js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

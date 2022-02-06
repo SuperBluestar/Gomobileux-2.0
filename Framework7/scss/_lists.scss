@@ -1,0 +1,108 @@
+.list {
+  margin: 15px 0;
+
+  .item-media {
+    padding-top: var(--f7-list-media-item-padding-horizontal);
+    padding-bottom: var(--f7-list-media-item-padding-horizontal);
+
+    & + .item-inner {
+      margin-bottom: 1px;
+      padding-top: var(--f7-list-media-item-padding-horizontal);
+      padding-bottom: var(--f7-list-media-item-padding-horizontal);
+    }
+  }
+}
+
+.date-list {
+  padding: 0 5px;
+
+  li,
+  .date {
+    float: left;
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center; 
+
+    &.active {
+      background-color: var(--f7-theme-color);
+      color: #ffffff;
+    }
+  }
+}
+
+.accordion-list {
+    .accordion-toggle{
+
+        &.active{
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+        }
+    }
+    .accordion-content{
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        font-size: 14px;
+        transition-duration: .3s;
+        min-height: 0;
+        padding: 0;
+
+        &.show{
+            height: auto;
+            padding: var(--f7-card-footer-padding-vertical) var(--f7-card-footer-padding-horizontal);
+        }
+    }
+}
+
+.form-list {
+  margin: 0;
+
+  ul {
+    border-radius: 8px;
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+    .item-content {
+      .item-floating-label {
+        position: absolute;
+        margin-top: 12px;
+        font-size: 16px;
+        transform: none;
+        transition: ease all 0.2s;
+      }
+      .item-input-wrap {
+        input[type="date"],
+        input[type="datetime-local"],
+        input[type="email"],
+        input[type="month"],
+        input[type="number"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="time"],
+        input[type="url"],
+        select,
+        textarea {
+          padding: 15px 0 0px 0;
+          line-height: 26px;
+          height: auto;
+        }
+      }
+
+      &.item-input-focused,
+      &.item-input-with-value {
+        .item-floating-label {
+          margin-top: 0px;
+          opacity: 0.6;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

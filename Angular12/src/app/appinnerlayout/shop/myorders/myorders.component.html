@@ -1,0 +1,130 @@
+<!-- Header -->
+<header class="container-fluid header">
+        <div class="row h-100">
+            <div class="col-auto align-self-center">
+                <a routerLink="/shophome" class="btn btn-link back-btn text-color-theme">
+                    <i class="bi bi-arrow-left size-20"></i>
+                </a>
+            </div>
+            <div class="col text-center align-self-center">
+                <h5 class="mb-0">My Orders</h5>
+            </div>
+            <div class="col-auto align-self-center">
+                <a routerLink="/shophome" class="link text-color-theme">
+                    <i class="bi bi-shop size-22"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- main page content -->
+    <div class="main-container container">
+        <!-- Search -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control is-valid" id="search" placeholder="Search">
+                    <label for="search">Search</label>
+                    <button type="button" class="btn btn-link tooltip-btn d-block text-color-theme">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart items -->
+        <div class="row mb-3">
+            <div class="col align-self-center">
+                <h5 class="mb-0">3 Ordered items</h5>
+            </div>
+            <div class="col-auto pe-0 align-self-center">
+                <a routerLink="faqs.html" class="link text-color-theme">Help <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm product mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <figure class="text-center avatar-70 avatar">
+                                    <img src="assets/img/product1.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="col ps-0 align-self-center">
+                                <p class="mb-0">
+                                    <small class="text-opac">Fresh</small>
+                                </p>
+                                <h6 class="text-color-theme">Apple</h6>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-primary">Arriving Today</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a routerLink="/orderdetail" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm product mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <figure class="text-center avatar-70 avatar">
+                                    <img src="assets/img/product2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="col ps-0">
+                                <p class="mb-0">
+                                    <small class="text-opac">Protein</small>
+                                </p>
+                                <h6 class="text-color-theme">Banana</h6>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Arriving on 22 Aug</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a routerLink="/orderdetail" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm product mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <figure class="text-center avatar-70 avatar">
+                                    <img src="assets/img/product3.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="col ps-0">
+                                <p class="mb-0">
+                                    <small class="text-opac">Healthy</small>
+                                </p>
+                                <h6 class="text-color-theme">Watermelon</h6>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Arriving on 29 Dec</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a routerLink="/orderdetail" class="link text-color-theme px-0">Track <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- main page content ends -->
